@@ -1,0 +1,5034 @@
+{
+  "dataset": "北區・古洞社區資源地圖",
+  "dataAsOf": "2026-10-29",
+  "scope": "北區（上水、粉嶺及古洞）範圍的固定資料快照；已核實資源集中於上水及粉嶺。",
+  "mapScope": {
+    "label": "北區・古洞",
+    "bounds": {
+      "south": 22.472,
+      "west": 114.078,
+      "north": 22.526,
+      "east": 114.167
+    }
+  },
+  "hoursCoverage": {
+    "structured": 43,
+    "total": 45,
+    "unstructured": [
+      "賽馬會粉嶺綜合青少年服務中心",
+      "匡智粉嶺綜合復康中心"
+    ]
+  },
+  "categories": {
+    "breathe": {
+      "label": "喘息空間",
+      "short": "喘息",
+      "color": "#236248",
+      "subcategories": [
+        "公園及花園",
+        "休憩處及公共座位",
+        "兒童遊樂場",
+        "室內公共休憩空間",
+        "社區會堂及公共活動空間",
+        "親子停留地點",
+        "聚腳及社交公共空間"
+      ]
+    },
+    "support": {
+      "label": "社區支援",
+      "short": "支援",
+      "color": "#b95c3f",
+      "subcategories": [
+        "新來港人士支援",
+        "綜合家庭服務",
+        "婦女服務",
+        "照顧者服務",
+        "兒童及青少年服務",
+        "長者服務",
+        "殘疾人士及復康服務",
+        "公營醫療及普通科服務",
+        "精神健康及情緒支援",
+        "社區藥房及健康服務",
+        "教育及入學支援",
+        "就業、培訓及進修",
+        "房屋及經濟援助",
+        "政府部門及公共查詢",
+        "法律、調解及權益支援",
+        "緊急求助資源"
+      ]
+    },
+    "daily": {
+      "label": "衣食住行",
+      "short": "日常",
+      "color": "#245f78",
+      "subcategories": [
+        "街市",
+        "熟食中心",
+        "商場及餐飲區",
+        "屋邨商業設施",
+        "餐飲集中地區",
+        "實惠及生活必需資源",
+        "港鐵設施",
+        "巴士及小巴設施",
+        "公共運輸交匯處",
+        "郵政及公共便民服務",
+        "公廁",
+        "垃圾收集設施",
+        "回收設施",
+        "其他日常生活公共資源"
+      ]
+    }
+  },
+  "locations": [
+    {
+      "id": "north-district-park",
+      "name": "北區公園",
+      "nameEn": "North District Park",
+      "category": "breathe",
+      "subcategories": [
+        "公園及花園",
+        "兒童遊樂場"
+      ],
+      "operator": "康樂及文化事務署",
+      "district": "上水",
+      "subarea": "石湖墟",
+      "address": "新界上水新運路 1 號",
+      "lat": 22.4989686,
+      "lng": 114.1326789,
+      "precision": "場地級",
+      "summary": "結合中式園景、人工湖、綠蔭與康體設施的大型公共公園，適合散步、賞花及親子活動。",
+      "website": "https://www.lcsd.gov.hk/tc/parks/ndp/index.html",
+      "hours": {
+        "0": [
+          [
+            "06:00",
+            "23:00"
+          ]
+        ],
+        "1": [
+          [
+            "06:00",
+            "23:00"
+          ]
+        ],
+        "2": [
+          [
+            "06:00",
+            "23:00"
+          ]
+        ],
+        "3": [
+          [
+            "06:00",
+            "23:00"
+          ]
+        ],
+        "4": [
+          [
+            "06:00",
+            "23:00"
+          ]
+        ],
+        "5": [
+          [
+            "06:00",
+            "23:00"
+          ]
+        ],
+        "6": [
+          [
+            "06:00",
+            "23:00"
+          ]
+        ]
+      },
+      "hoursText": "動態設施一般全日開放；其餘園區每日約 06:00–23:00",
+      "openingNotes": "不同閘區及設施可能有獨立時間，保養、賽事或惡劣天氣時會調整。",
+      "fee": "free",
+      "feeNotes": "免費入場；個別收費設施另計。",
+      "targetGroups": [
+        "家庭",
+        "兒童",
+        "長者",
+        "照顧者"
+      ],
+      "facilities": [
+        "兒童遊樂設施",
+        "運動場地",
+        "園景與人工湖",
+        "步行徑"
+      ],
+      "accessibility": [
+        "公園主要通道；具體無障礙設施位置請以現場指示為準"
+      ],
+      "transport": [
+        "鄰近東鐵綫上水站及新運路",
+        "可由區內巴士或步行前往"
+      ],
+      "tips": [
+        "每年 3–5 月是義工手記提到的賞花熱門期。",
+        "公園範圍大，出發前可按需要使用指定入口。"
+      ],
+      "story": {
+        "title": "義工推薦：北區公園",
+        "text": "「免費兒童遊樂設施，裡面還有籃球場、足球場；每年 3 至 5 月是賞花熱門景點。遛娃散心兩不誤。」以上為義工觀察，並非官方即時花況。",
+        "source": "providedNotes"
+      },
+      "image": "assets/images/north-district-park-1.jpg",
+      "sources": [
+        "lcsdPark",
+        "providedNotes",
+        "osm"
+      ],
+      "dataDate": "2026-10-29",
+      "completeness": "詳細收錄",
+      "sourceDetails": [
+        {
+          "title": "康樂及文化事務署：北區公園",
+          "publisher": "康樂及文化事務署",
+          "url": "https://www.lcsd.gov.hk/tc/parks/ndp/index.html",
+          "type": "政府場地頁"
+        },
+        {
+          "title": "義工手寫介紹（項目提供）",
+          "publisher": "社區導航大使小組",
+          "url": null,
+          "type": "項目提供資料"
+        },
+        {
+          "title": "OpenStreetMap 地點及座標核對",
+          "publisher": "OpenStreetMap contributors",
+          "url": "https://www.openstreetmap.org/copyright",
+          "type": "開放地理資料"
+        }
+      ]
+    },
+    {
+      "id": "shek-wu-hui-playground",
+      "name": "石湖墟遊樂場",
+      "nameEn": "Shek Wu Hui Playground",
+      "category": "breathe",
+      "subcategories": [
+        "兒童遊樂場",
+        "休憩處及公共座位"
+      ],
+      "operator": "康樂及文化事務署",
+      "district": "上水",
+      "subarea": "石湖墟",
+      "address": "新界上水石湖墟新樂街",
+      "lat": 22.5036783,
+      "lng": 114.1283359,
+      "precision": "場地級",
+      "summary": "石湖墟市區內的公共遊樂及休憩空間，可作購物行程中的短暫停留點。",
+      "hours": {
+        "0": [
+          [
+            "00:00",
+            "24:00"
+          ]
+        ],
+        "1": [
+          [
+            "00:00",
+            "24:00"
+          ]
+        ],
+        "2": [
+          [
+            "00:00",
+            "24:00"
+          ]
+        ],
+        "3": [
+          [
+            "00:00",
+            "24:00"
+          ]
+        ],
+        "4": [
+          [
+            "00:00",
+            "24:00"
+          ]
+        ],
+        "5": [
+          [
+            "00:00",
+            "24:00"
+          ]
+        ],
+        "6": [
+          [
+            "00:00",
+            "24:00"
+          ]
+        ]
+      },
+      "hoursText": "戶外遊樂場一般全日開放；維修或活動安排除外",
+      "openingNotes": "這是無閘戶外公共場地；清潔、維修、活動或惡劣天氣時，部分設施可能暫停使用。",
+      "fee": "free",
+      "feeNotes": "免費使用。",
+      "targetGroups": [
+        "家庭",
+        "兒童",
+        "長者"
+      ],
+      "sources": [
+        "lcsdParks",
+        "osm"
+      ],
+      "dataDate": "2026-10-29",
+      "completeness": "基本收錄",
+      "sourceDetails": [
+        {
+          "title": "康樂及文化事務署：康樂場地、公園及遊樂場",
+          "publisher": "康樂及文化事務署",
+          "url": "https://www.lcsd.gov.hk/tc/facilities/facilitieslist.html",
+          "type": "政府場地名錄"
+        },
+        {
+          "title": "OpenStreetMap 地點及座標核對",
+          "publisher": "OpenStreetMap contributors",
+          "url": "https://www.openstreetmap.org/copyright",
+          "type": "開放地理資料"
+        }
+      ]
+    },
+    {
+      "id": "san-wan-road-garden",
+      "name": "新運路花園",
+      "nameEn": "San Wan Road Garden",
+      "category": "breathe",
+      "subcategories": [
+        "公園及花園",
+        "休憩處及公共座位"
+      ],
+      "operator": "康樂及文化事務署",
+      "district": "上水",
+      "subarea": "上水市中心",
+      "address": "新界上水新運路一帶",
+      "lat": 22.5004812,
+      "lng": 114.1298605,
+      "precision": "場地級",
+      "summary": "連接上水市中心與公共交通節點的街區花園，適合短暫停留與步行途中休息。",
+      "hours": {
+        "0": [
+          [
+            "00:00",
+            "24:00"
+          ]
+        ],
+        "1": [
+          [
+            "00:00",
+            "24:00"
+          ]
+        ],
+        "2": [
+          [
+            "00:00",
+            "24:00"
+          ]
+        ],
+        "3": [
+          [
+            "00:00",
+            "24:00"
+          ]
+        ],
+        "4": [
+          [
+            "00:00",
+            "24:00"
+          ]
+        ],
+        "5": [
+          [
+            "00:00",
+            "24:00"
+          ]
+        ],
+        "6": [
+          [
+            "00:00",
+            "24:00"
+          ]
+        ]
+      },
+      "hoursText": "24 小時開放",
+      "fee": "free",
+      "feeNotes": "免費使用。",
+      "facilities": [
+        "綠化花園",
+        "公共休憩空間"
+      ],
+      "targetGroups": [
+        "家庭",
+        "長者"
+      ],
+      "sources": [
+        "lcsdParks",
+        "osm"
+      ],
+      "dataDate": "2026-10-29",
+      "completeness": "基本收錄",
+      "sourceDetails": [
+        {
+          "title": "康樂及文化事務署：康樂場地、公園及遊樂場",
+          "publisher": "康樂及文化事務署",
+          "url": "https://www.lcsd.gov.hk/tc/facilities/facilitieslist.html",
+          "type": "政府場地名錄"
+        },
+        {
+          "title": "OpenStreetMap 地點及座標核對",
+          "publisher": "OpenStreetMap contributors",
+          "url": "https://www.openstreetmap.org/copyright",
+          "type": "開放地理資料"
+        }
+      ]
+    },
+    {
+      "id": "fanling-hong-lok-park",
+      "name": "粉嶺康樂公園",
+      "nameEn": "Fanling Hong Lok Park",
+      "category": "breathe",
+      "subcategories": [
+        "公園及花園",
+        "休憩處及公共座位"
+      ],
+      "operator": "康樂及文化事務署",
+      "district": "粉嶺",
+      "subarea": "粉嶺市中心",
+      "address": "新界粉嶺市中心一帶",
+      "lat": 22.4919512,
+      "lng": 114.1438038,
+      "precision": "場地級",
+      "summary": "粉嶺市中心的社區公園與綠化緩衝空間，可配合附近街市及商場行程使用。",
+      "hours": {
+        "0": [
+          [
+            "00:00",
+            "24:00"
+          ]
+        ],
+        "1": [
+          [
+            "00:00",
+            "24:00"
+          ]
+        ],
+        "2": [
+          [
+            "00:00",
+            "24:00"
+          ]
+        ],
+        "3": [
+          [
+            "00:00",
+            "24:00"
+          ]
+        ],
+        "4": [
+          [
+            "00:00",
+            "24:00"
+          ]
+        ],
+        "5": [
+          [
+            "00:00",
+            "24:00"
+          ]
+        ],
+        "6": [
+          [
+            "00:00",
+            "24:00"
+          ]
+        ]
+      },
+      "hoursText": "公園一般全日開放；維護或活動安排除外",
+      "openingNotes": "戶外園區一般可供通行；個別設施、清潔、維修及惡劣天氣安排可能不同。",
+      "fee": "free",
+      "feeNotes": "免費使用。",
+      "targetGroups": [
+        "家庭",
+        "長者",
+        "照顧者"
+      ],
+      "sources": [
+        "lcsdParks",
+        "osm"
+      ],
+      "dataDate": "2026-10-29",
+      "completeness": "基本收錄",
+      "sourceDetails": [
+        {
+          "title": "康樂及文化事務署：康樂場地、公園及遊樂場",
+          "publisher": "康樂及文化事務署",
+          "url": "https://www.lcsd.gov.hk/tc/facilities/facilitieslist.html",
+          "type": "政府場地名錄"
+        },
+        {
+          "title": "OpenStreetMap 地點及座標核對",
+          "publisher": "OpenStreetMap contributors",
+          "url": "https://www.openstreetmap.org/copyright",
+          "type": "開放地理資料"
+        }
+      ]
+    },
+    {
+      "id": "luen-wo-hui-childrens-playground",
+      "name": "聯和墟兒童遊樂場",
+      "nameEn": "Luen Wo Hui Children's Playground",
+      "category": "breathe",
+      "subcategories": [
+        "兒童遊樂場",
+        "公園及花園"
+      ],
+      "operator": "康樂及文化事務署",
+      "district": "粉嶺",
+      "subarea": "聯和墟",
+      "address": "新界粉嶺聯和墟一帶",
+      "lat": 22.4997307,
+      "lng": 114.1450095,
+      "precision": "場地級",
+      "summary": "聯和墟市區內的兒童遊樂場，可作街市及圖書館行程中的親子休息點。",
+      "hours": {
+        "0": [
+          [
+            "00:00",
+            "24:00"
+          ]
+        ],
+        "1": [
+          [
+            "00:00",
+            "24:00"
+          ]
+        ],
+        "2": [
+          [
+            "00:00",
+            "24:00"
+          ]
+        ],
+        "3": [
+          [
+            "00:00",
+            "24:00"
+          ]
+        ],
+        "4": [
+          [
+            "00:00",
+            "24:00"
+          ]
+        ],
+        "5": [
+          [
+            "00:00",
+            "24:00"
+          ]
+        ],
+        "6": [
+          [
+            "00:00",
+            "24:00"
+          ]
+        ]
+      },
+      "hoursText": "戶外兒童遊樂場一般全日開放；維修或活動安排除外",
+      "openingNotes": "夜間光線及個別設施可用情況以現場為準；惡劣天氣後應先留意場地狀況。",
+      "fee": "free",
+      "feeNotes": "免費使用。",
+      "facilities": [
+        "兒童遊樂設施"
+      ],
+      "targetGroups": [
+        "兒童",
+        "家庭"
+      ],
+      "sources": [
+        "lcsdParks",
+        "osm"
+      ],
+      "dataDate": "2026-10-29",
+      "completeness": "基本收錄",
+      "sourceDetails": [
+        {
+          "title": "康樂及文化事務署：康樂場地、公園及遊樂場",
+          "publisher": "康樂及文化事務署",
+          "url": "https://www.lcsd.gov.hk/tc/facilities/facilitieslist.html",
+          "type": "政府場地名錄"
+        },
+        {
+          "title": "OpenStreetMap 地點及座標核對",
+          "publisher": "OpenStreetMap contributors",
+          "url": "https://www.openstreetmap.org/copyright",
+          "type": "開放地理資料"
+        }
+      ]
+    },
+    {
+      "id": "fanling-station-playground",
+      "name": "粉嶺站遊樂場",
+      "nameEn": "Fanling Station Playground",
+      "category": "breathe",
+      "subcategories": [
+        "兒童遊樂場",
+        "休憩處及公共座位"
+      ],
+      "operator": "康樂及文化事務署",
+      "district": "粉嶺",
+      "subarea": "粉嶺站一帶",
+      "address": "新界粉嶺站附近",
+      "lat": 22.4913935,
+      "lng": 114.140484,
+      "precision": "場地級",
+      "summary": "毗鄰粉嶺站一帶的公共休憩空間，適合候車前後稍作停留。",
+      "hours": {
+        "0": [
+          [
+            "00:00",
+            "24:00"
+          ]
+        ],
+        "1": [
+          [
+            "00:00",
+            "24:00"
+          ]
+        ],
+        "2": [
+          [
+            "00:00",
+            "24:00"
+          ]
+        ],
+        "3": [
+          [
+            "00:00",
+            "24:00"
+          ]
+        ],
+        "4": [
+          [
+            "00:00",
+            "24:00"
+          ]
+        ],
+        "5": [
+          [
+            "00:00",
+            "24:00"
+          ]
+        ],
+        "6": [
+          [
+            "00:00",
+            "24:00"
+          ]
+        ]
+      },
+      "hoursText": "戶外休憩空間一般全日開放；維修或活動安排除外",
+      "openingNotes": "場地沒有固定售票處；個別設施或清潔維修時段可能暫停使用。",
+      "fee": "free",
+      "feeNotes": "免費使用。",
+      "targetGroups": [
+        "家庭",
+        "兒童"
+      ],
+      "sources": [
+        "lcsdParks",
+        "osm"
+      ],
+      "dataDate": "2026-10-29",
+      "completeness": "基本收錄",
+      "sourceDetails": [
+        {
+          "title": "康樂及文化事務署：康樂場地、公園及遊樂場",
+          "publisher": "康樂及文化事務署",
+          "url": "https://www.lcsd.gov.hk/tc/facilities/facilitieslist.html",
+          "type": "政府場地名錄"
+        },
+        {
+          "title": "OpenStreetMap 地點及座標核對",
+          "publisher": "OpenStreetMap contributors",
+          "url": "https://www.openstreetmap.org/copyright",
+          "type": "開放地理資料"
+        }
+      ]
+    },
+    {
+      "id": "north-district-town-hall",
+      "name": "北區大會堂",
+      "nameEn": "North District Town Hall",
+      "category": "breathe",
+      "subcategories": [
+        "社區會堂及公共活動空間",
+        "親子停留地點"
+      ],
+      "operator": "康樂及文化事務署",
+      "district": "上水",
+      "subarea": "上水市中心",
+      "address": "新界上水龍運街 2 號北區社區中心",
+      "lat": 22.5014223,
+      "lng": 114.1287386,
+      "precision": "建築物級",
+      "summary": "提供文化及社區活動場地的公共會堂，實際活動、入場及開放安排視節目而定。",
+      "hours": {
+        "0": [
+          [
+            "09:00",
+            "22:00"
+          ]
+        ],
+        "1": [
+          [
+            "09:00",
+            "22:00"
+          ]
+        ],
+        "2": [
+          [
+            "09:00",
+            "22:00"
+          ]
+        ],
+        "3": [
+          [
+            "09:00",
+            "22:00"
+          ]
+        ],
+        "4": [
+          [
+            "09:00",
+            "22:00"
+          ]
+        ],
+        "5": [
+          [
+            "09:00",
+            "22:00"
+          ]
+        ],
+        "6": [
+          [
+            "09:00",
+            "22:00"
+          ]
+        ]
+      },
+      "hoursText": "會堂每日 09:00–22:00；售票處約 10:00–18:30",
+      "openingNotes": "演奏廳及活動室只供已購票、報名或租用人士使用；售票處有演出時會延長至開場後約 30 分鐘。",
+      "appointment": "活動或場地使用一般需另行購票、報名或預訂。",
+      "fee": "unknown",
+      "feeNotes": "活動費用視節目或租用安排而定。",
+      "targetGroups": [
+        "家庭",
+        "長者",
+        "青少年"
+      ],
+      "sources": [
+        "lcsdParks",
+        "osm"
+      ],
+      "dataDate": "2026-10-29",
+      "completeness": "基本收錄",
+      "sourceDetails": [
+        {
+          "title": "康樂及文化事務署：康樂場地、公園及遊樂場",
+          "publisher": "康樂及文化事務署",
+          "url": "https://www.lcsd.gov.hk/tc/facilities/facilitieslist.html",
+          "type": "政府場地名錄"
+        },
+        {
+          "title": "OpenStreetMap 地點及座標核對",
+          "publisher": "OpenStreetMap contributors",
+          "url": "https://www.openstreetmap.org/copyright",
+          "type": "開放地理資料"
+        }
+      ]
+    },
+    {
+      "id": "cheung-wah-community-hall",
+      "name": "祥華邨社區會堂",
+      "nameEn": "Cheung Wah Community Hall",
+      "category": "breathe",
+      "subcategories": [
+        "社區會堂及公共活動空間",
+        "聚腳及社交公共空間"
+      ],
+      "operator": "民政事務總署",
+      "district": "粉嶺",
+      "subarea": "祥華",
+      "address": "新界粉嶺新運路祥華邨",
+      "lat": 22.4924662,
+      "lng": 114.141764,
+      "precision": "建築物級",
+      "summary": "供邨內及社區活動使用的公共會堂，開放情況按預訂及活動安排而異。",
+      "hours": {
+        "0": [
+          [
+            "09:00",
+            "22:00"
+          ]
+        ],
+        "1": [
+          [
+            "09:00",
+            "22:00"
+          ]
+        ],
+        "2": [
+          [
+            "09:00",
+            "22:00"
+          ]
+        ],
+        "3": [
+          [
+            "09:00",
+            "22:00"
+          ]
+        ],
+        "4": [
+          [
+            "09:00",
+            "22:00"
+          ]
+        ],
+        "5": [
+          [
+            "09:00",
+            "22:00"
+          ]
+        ],
+        "6": [
+          [
+            "09:00",
+            "22:00"
+          ]
+        ]
+      },
+      "hoursText": "一般 09:00–22:00；禮堂及活動室按預訂開放",
+      "openingNotes": "公眾可使用的範圍視租用、活動及場地安排而定；酷熱天氣警告期間亦可能作臨時避暑中心。",
+      "fee": "unknown",
+      "targetGroups": [
+        "家庭",
+        "長者",
+        "青少年"
+      ],
+      "sources": [
+        "had",
+        "osm"
+      ],
+      "dataDate": "2026-10-29",
+      "completeness": "基本收錄",
+      "sourceDetails": [
+        {
+          "title": "政府電話簿：北區民政事務處",
+          "publisher": "香港特別行政區政府",
+          "url": "https://tel.directory.gov.hk/0253000038_CHI.html",
+          "type": "政府機構頁"
+        },
+        {
+          "title": "OpenStreetMap 地點及座標核對",
+          "publisher": "OpenStreetMap contributors",
+          "url": "https://www.openstreetmap.org/copyright",
+          "type": "開放地理資料"
+        }
+      ]
+    },
+    {
+      "id": "sheung-shui-ifsc",
+      "name": "上水綜合家庭服務中心",
+      "nameEn": "Sheung Shui Integrated Family Service Centre",
+      "category": "support",
+      "subcategories": [
+        "綜合家庭服務",
+        "新來港人士支援"
+      ],
+      "operator": "社會福利署",
+      "district": "上水",
+      "subarea": "上水市中心",
+      "address": "新界上水龍運街 2 號北區社區中心 3 樓",
+      "lat": 22.5016411,
+      "lng": 114.1287979,
+      "precision": "建築物級",
+      "summary": "為有需要的個人及家庭提供輔導、資源諮詢、轉介及支援服務。",
+      "hours": {
+        "0": [],
+        "1": [
+          [
+            "09:00",
+            "13:00"
+          ],
+          [
+            "14:00",
+            "20:00"
+          ]
+        ],
+        "2": [
+          [
+            "09:00",
+            "13:00"
+          ],
+          [
+            "14:00",
+            "17:00"
+          ]
+        ],
+        "3": [
+          [
+            "09:00",
+            "13:00"
+          ],
+          [
+            "14:00",
+            "20:00"
+          ]
+        ],
+        "4": [
+          [
+            "09:00",
+            "13:00"
+          ],
+          [
+            "14:00",
+            "17:00"
+          ]
+        ],
+        "5": [
+          [
+            "09:00",
+            "13:00"
+          ],
+          [
+            "14:00",
+            "17:00"
+          ]
+        ],
+        "6": [
+          [
+            "09:00",
+            "13:00"
+          ],
+          [
+            "14:00",
+            "17:00"
+          ]
+        ]
+      },
+      "hoursText": "星期一至六 09:00–13:00、14:00–17:00；星期一及三部分樓層至 20:00",
+      "openingNotes": "星期日及公眾假期休息。三樓及四樓服務時段略有不同；個案、小組及活動宜先致電確認。",
+      "phones": [
+        {
+          "label": "查詢",
+          "number": "2673 1525"
+        }
+      ],
+      "website": "https://www.swd.gov.hk/tc/pubsvc/district/taipoandno/infobook1/index.html",
+      "appointment": "部分服務可能需預約，未知者請先致電查詢。",
+      "referral": "個別服務或需轉介。",
+      "services": [
+        "家庭輔導",
+        "新來港適應支援",
+        "資源諮詢及轉介"
+      ],
+      "targetGroups": [
+        "新來港人士",
+        "家庭",
+        "兒童",
+        "長者",
+        "照顧者"
+      ],
+      "fee": "free",
+      "feeNotes": "一般家庭服務不收取費用。",
+      "transport": [
+        "港鐵上水站一帶，經龍運街前往北區社區中心"
+      ],
+      "sources": [
+        "swdProfile",
+        "providedBooklet",
+        "osm"
+      ],
+      "dataDate": "2026-10-29",
+      "completeness": "詳細收錄",
+      "sourceDetails": [
+        {
+          "title": "社會福利署：北區服務概覽",
+          "publisher": "社會福利署",
+          "url": "https://www.swd.gov.hk/tc/pubsvc/district/taipoandno/infobook1/index.html",
+          "type": "政府服務名錄"
+        },
+        {
+          "title": "新港北區通：社區地圖小冊子",
+          "publisher": "香港婦女中心協會慧思薈（上水）",
+          "url": null,
+          "type": "項目提供資料"
+        },
+        {
+          "title": "OpenStreetMap 地點及座標核對",
+          "publisher": "OpenStreetMap contributors",
+          "url": "https://www.openstreetmap.org/copyright",
+          "type": "開放地理資料"
+        }
+      ]
+    },
+    {
+      "id": "fanling-ifsc",
+      "name": "粉嶺綜合家庭服務中心",
+      "nameEn": "Fanling Integrated Family Service Centre",
+      "category": "support",
+      "subcategories": [
+        "綜合家庭服務",
+        "新來港人士支援"
+      ],
+      "operator": "社會福利署",
+      "district": "粉嶺",
+      "subarea": "粉嶺市中心",
+      "address": "新界粉嶺璧峰路 3 號北區政府合署 2 樓",
+      "lat": 22.4945993,
+      "lng": 114.1383053,
+      "precision": "建築物級",
+      "summary": "由社工提供家庭輔導、資源諮詢、支援小組及適切轉介。",
+      "phones": [
+        {
+          "label": "查詢",
+          "number": "2675 1614"
+        }
+      ],
+      "website": "https://www.swd.gov.hk/tc/pubsvc/district/taipoandno/infobook1/index.html",
+      "hours": {
+        "0": [],
+        "1": [
+          [
+            "09:00",
+            "13:00"
+          ],
+          [
+            "14:00",
+            "17:00"
+          ]
+        ],
+        "2": [
+          [
+            "09:00",
+            "13:00"
+          ],
+          [
+            "14:00",
+            "20:00"
+          ]
+        ],
+        "3": [
+          [
+            "09:00",
+            "13:00"
+          ],
+          [
+            "14:00",
+            "17:00"
+          ]
+        ],
+        "4": [
+          [
+            "09:00",
+            "13:00"
+          ],
+          [
+            "14:00",
+            "20:00"
+          ]
+        ],
+        "5": [
+          [
+            "09:00",
+            "13:00"
+          ],
+          [
+            "14:00",
+            "17:00"
+          ]
+        ],
+        "6": [
+          [
+            "09:00",
+            "13:00"
+          ],
+          [
+            "14:00",
+            "17:00"
+          ]
+        ]
+      },
+      "hoursText": "星期二、四設晚間時段；星期日及公眾假期休息",
+      "openingNotes": "活動及個案服務時間可能不同，請先致電確認。",
+      "appointment": "建議先致電查詢或預約。",
+      "services": [
+        "家庭輔導",
+        "資源諮詢及轉介",
+        "新來港適應支援",
+        "支援小組"
+      ],
+      "targetGroups": [
+        "家庭",
+        "新來港人士",
+        "兒童",
+        "長者",
+        "照顧者"
+      ],
+      "fee": "free",
+      "feeNotes": "一般家庭服務不收取費用。",
+      "transport": [
+        "粉嶺站一帶，經百和路及璧峰路前往北區政府合署"
+      ],
+      "sources": [
+        "swdProfile",
+        "osm"
+      ],
+      "dataDate": "2026-10-29",
+      "completeness": "詳細收錄",
+      "sourceDetails": [
+        {
+          "title": "社會福利署：北區服務概覽",
+          "publisher": "社會福利署",
+          "url": "https://www.swd.gov.hk/tc/pubsvc/district/taipoandno/infobook1/index.html",
+          "type": "政府服務名錄"
+        },
+        {
+          "title": "OpenStreetMap 地點及座標核對",
+          "publisher": "OpenStreetMap contributors",
+          "url": "https://www.openstreetmap.org/copyright",
+          "type": "開放地理資料"
+        }
+      ]
+    },
+    {
+      "id": "iss-sheung-shui",
+      "name": "香港國際社會服務社（跨境及國際社會服務）",
+      "nameEn": "ISS-HK Cross-Border and International Social Service",
+      "category": "support",
+      "subcategories": [
+        "新來港人士支援",
+        "綜合家庭服務"
+      ],
+      "operator": "香港國際社會服務社",
+      "district": "上水",
+      "subarea": "上水市中心",
+      "address": "新界上水龍運街 2 號北區社區中心 2 樓",
+      "lat": 22.5016411,
+      "lng": 114.1287979,
+      "precision": "建築物級",
+      "summary": "為新來港人士及受跨境家庭分隔影響的人士提供諮詢、個案、小組及轉介支援。",
+      "phones": [
+        {
+          "label": "查詢",
+          "number": "2353 6119"
+        }
+      ],
+      "website": "https://www.swd.gov.hk/tc/pubsvc/family/cat_family/cbicss/index.html",
+      "hours": {
+        "0": [],
+        "1": [
+          [
+            "09:00",
+            "13:00"
+          ],
+          [
+            "14:00",
+            "17:45"
+          ]
+        ],
+        "2": [
+          [
+            "09:00",
+            "13:00"
+          ],
+          [
+            "14:00",
+            "17:45"
+          ]
+        ],
+        "3": [
+          [
+            "09:00",
+            "13:00"
+          ],
+          [
+            "14:00",
+            "17:45"
+          ]
+        ],
+        "4": [
+          [
+            "09:00",
+            "13:00"
+          ],
+          [
+            "14:00",
+            "17:45"
+          ]
+        ],
+        "5": [
+          [
+            "09:00",
+            "13:00"
+          ],
+          [
+            "14:00",
+            "17:45"
+          ]
+        ],
+        "6": []
+      },
+      "hoursText": "星期一至五 09:00–13:00、14:00–17:45；週末及公眾假期休息",
+      "appointment": "個案或小組服務建議先致電聯絡。",
+      "services": [
+        "服務資訊及諮詢",
+        "個案、小組及輔導",
+        "轉介至相關服務"
+      ],
+      "targetGroups": [
+        "新來港人士",
+        "家庭",
+        "兒童"
+      ],
+      "fee": "free",
+      "feeNotes": "一般服務免費；跨境家庭評估等個別服務可能收費。",
+      "languages": [
+        "廣東話",
+        "普通話"
+      ],
+      "sources": [
+        "swdCross",
+        "providedBooklet",
+        "osm"
+      ],
+      "dataDate": "2026-10-29",
+      "completeness": "詳細收錄",
+      "sourceDetails": [
+        {
+          "title": "社會福利署：跨境及國際社會服務",
+          "publisher": "社會福利署",
+          "url": "https://www.swd.gov.hk/tc/pubsvc/family/cat_family/cbicss/index.html",
+          "type": "政府服務頁"
+        },
+        {
+          "title": "新港北區通：社區地圖小冊子",
+          "publisher": "香港婦女中心協會慧思薈（上水）",
+          "url": null,
+          "type": "項目提供資料"
+        },
+        {
+          "title": "OpenStreetMap 地點及座標核對",
+          "publisher": "OpenStreetMap contributors",
+          "url": "https://www.openstreetmap.org/copyright",
+          "type": "開放地理資料"
+        }
+      ]
+    },
+    {
+      "id": "wise-sheung-shui",
+      "name": "慧思薈（上水）",
+      "nameEn": "HKFWC WISE Sheung Shui",
+      "category": "support",
+      "subcategories": [
+        "婦女服務",
+        "照顧者服務",
+        "就業、培訓及進修"
+      ],
+      "operator": "香港婦女中心協會",
+      "district": "上水",
+      "subarea": "上水市中心",
+      "address": "新界上水龍琛路 39 號上水廣場 17 樓 1709–10 室",
+      "lat": 22.5025458,
+      "lng": 114.1278301,
+      "precision": "入口級",
+      "summary": "以婦女為本的社區服務空間，提供培訓、就業支援、託兒、親子活動及照顧者支援。",
+      "phones": [
+        {
+          "label": "查詢",
+          "number": "2157 9699"
+        }
+      ],
+      "email": "sheungshui@womencentre.org.hk",
+      "website": "https://womencentre.org.hk/Zh/Services/childcare/sschildcare/",
+      "hours": {
+        "0": [],
+        "1": [
+          [
+            "09:30",
+            "17:30"
+          ]
+        ],
+        "2": [
+          [
+            "09:30",
+            "17:30"
+          ]
+        ],
+        "3": [
+          [
+            "09:30",
+            "17:30"
+          ]
+        ],
+        "4": [
+          [
+            "09:30",
+            "17:30"
+          ]
+        ],
+        "5": [
+          [
+            "09:30",
+            "17:30"
+          ]
+        ],
+        "6": []
+      },
+      "hoursText": "星期一至五 09:30–17:30；星期六、日及公眾假期休息",
+      "openingNotes": "晚間時段、個別課程及託兒服務按安排提供。",
+      "appointment": "部分活動及服務需報名或預約。",
+      "services": [
+        "婦女及照顧者支援",
+        "能力提升及就業課程",
+        "彈性託兒",
+        "親子及兒童活動"
+      ],
+      "targetGroups": [
+        "婦女",
+        "照顧者",
+        "家庭",
+        "兒童",
+        "新來港人士"
+      ],
+      "fee": "low",
+      "feeNotes": "個別服務收費不同；例如手記所見託兒服務按小時收費。",
+      "languages": [
+        "廣東話",
+        "普通話"
+      ],
+      "transport": [
+        "港鐵上水站 A4 出口可達上水廣場（依商場指示）"
+      ],
+      "sources": [
+        "hkfwcSS",
+        "providedBooklet",
+        "osm"
+      ],
+      "dataDate": "2026-10-29",
+      "completeness": "詳細收錄",
+      "sourceDetails": [
+        {
+          "title": "香港婦女中心協會：慧思薈（上水）",
+          "publisher": "香港婦女中心協會",
+          "url": "https://womencentre.org.hk/Zh/Services/childcare/sschildcare/",
+          "type": "服務機構頁"
+        },
+        {
+          "title": "新港北區通：社區地圖小冊子",
+          "publisher": "香港婦女中心協會慧思薈（上水）",
+          "url": null,
+          "type": "項目提供資料"
+        },
+        {
+          "title": "OpenStreetMap 地點及座標核對",
+          "publisher": "OpenStreetMap contributors",
+          "url": "https://www.openstreetmap.org/copyright",
+          "type": "開放地理資料"
+        }
+      ]
+    },
+    {
+      "id": "carer-centre-fanling",
+      "name": "賽馬會照顧者中心（粉嶺）",
+      "nameEn": "Jockey Club Carer Space (Fanling)",
+      "category": "support",
+      "subcategories": [
+        "照顧者服務",
+        "綜合家庭服務"
+      ],
+      "operator": "香港婦女中心協會",
+      "district": "粉嶺",
+      "subarea": "粉嶺市中心",
+      "address": "新界粉嶺新運路 33 號粉嶺中心地下 19A 舖",
+      "lat": 22.4905519,
+      "lng": 114.1413961,
+      "precision": "入口級",
+      "summary": "以照顧者為本，提供需要評估、資源諮詢、照顧技巧、減壓活動及轉介支援。",
+      "phones": [
+        {
+          "label": "查詢",
+          "number": "2654 9828"
+        }
+      ],
+      "email": "carer.north@womencentre.org.hk",
+      "website": "https://www.womencentre.org.hk/Zh/Newsroom/Event/JockeyClubCarerSpaceFanlingOpenday/",
+      "hours": {
+        "0": [],
+        "1": [
+          [
+            "14:00",
+            "22:00"
+          ]
+        ],
+        "2": [
+          [
+            "09:00",
+            "18:00"
+          ]
+        ],
+        "3": [
+          [
+            "09:00",
+            "18:00"
+          ]
+        ],
+        "4": [
+          [
+            "09:00",
+            "18:00"
+          ]
+        ],
+        "5": [
+          [
+            "09:00",
+            "18:00"
+          ]
+        ],
+        "6": []
+      },
+      "hoursText": "星期一 14:00–22:00；星期二至五 09:00–18:00；週末及公眾假期休息",
+      "openingNotes": "用膳時間：星期一 18:00–19:00；星期二至五 13:00–14:00。",
+      "appointment": "活動及個別支援建議先聯絡。",
+      "services": [
+        "照顧者需要評估",
+        "照顧技巧訓練",
+        "社區資源諮詢及轉介",
+        "減壓及社交活動"
+      ],
+      "targetGroups": [
+        "照顧者",
+        "長者",
+        "家庭"
+      ],
+      "fee": "free",
+      "feeNotes": "中心一般支援服務免費；個別活動收費另示。",
+      "transport": [
+        "粉嶺站一帶，經商場入口前往地下 19A 舖"
+      ],
+      "sources": [
+        "carerFL",
+        "providedBooklet",
+        "osm"
+      ],
+      "dataDate": "2026-10-29",
+      "completeness": "詳細收錄",
+      "sourceDetails": [
+        {
+          "title": "賽馬會照顧者中心（粉嶺）開放資料",
+          "publisher": "香港婦女中心協會",
+          "url": "https://www.womencentre.org.hk/Zh/Newsroom/Event/JockeyClubCarerSpaceFanlingOpenday/",
+          "type": "服務機構頁"
+        },
+        {
+          "title": "新港北區通：社區地圖小冊子",
+          "publisher": "香港婦女中心協會慧思薈（上水）",
+          "url": null,
+          "type": "項目提供資料"
+        },
+        {
+          "title": "OpenStreetMap 地點及座標核對",
+          "publisher": "OpenStreetMap contributors",
+          "url": "https://www.openstreetmap.org/copyright",
+          "type": "開放地理資料"
+        }
+      ]
+    },
+    {
+      "id": "elchk-north-youth",
+      "name": "基督教香港信義會北區青少年綜合服務中心",
+      "nameEn": "ELCHK North District Youth Integrated Service Centre",
+      "category": "support",
+      "subcategories": [
+        "兒童及青少年服務",
+        "綜合家庭服務"
+      ],
+      "operator": "基督教香港信義會社會服務部",
+      "district": "上水",
+      "subarea": "彩園",
+      "address": "新界上水彩園邨彩麗樓地下 101–116 號",
+      "lat": 22.5000407,
+      "lng": 114.1254014,
+      "precision": "建築物級",
+      "summary": "為兒童及青少年提供發展活動、支援小組、輔導及家庭參與機會。",
+      "hours": {
+        "0": [],
+        "1": [],
+        "2": [
+          [
+            "14:00",
+            "21:45"
+          ]
+        ],
+        "3": [
+          [
+            "09:45",
+            "13:00"
+          ],
+          [
+            "14:00",
+            "21:45"
+          ]
+        ],
+        "4": [
+          [
+            "14:00",
+            "21:45"
+          ]
+        ],
+        "5": [
+          [
+            "14:00",
+            "21:45"
+          ]
+        ],
+        "6": [
+          [
+            "09:45",
+            "13:00"
+          ],
+          [
+            "14:00",
+            "17:45"
+          ],
+          [
+            "18:45",
+            "21:45"
+          ]
+        ]
+      },
+      "hoursText": "星期二、四、五 14:00–21:45；星期三 09:45–21:45；星期六 09:45–21:45（分節）",
+      "openingNotes": "星期一、日及公眾假期休息。午膳及晚飯時段前台可能暫停收費；活動時間以中心公布為準。",
+      "phones": [
+        {
+          "label": "彩麗樓",
+          "number": "2673 2120"
+        },
+        {
+          "label": "彩玉樓",
+          "number": "2673 1159"
+        }
+      ],
+      "email": "ndit@elchk.org.hk",
+      "website": "https://ndit.elchk.org.hk/contactus.php",
+      "appointment": "活動一般需預先報名；個別支援請聯絡中心。",
+      "services": [
+        "兒童及青少年發展活動",
+        "功課及成長支援",
+        "家庭活動",
+        "個別輔導及轉介"
+      ],
+      "targetGroups": [
+        "兒童",
+        "青少年",
+        "家庭"
+      ],
+      "fee": "low",
+      "feeNotes": "部分活動免費，部分按成本或活動項目收費。",
+      "sources": [
+        "elchk",
+        "providedBooklet",
+        "osm"
+      ],
+      "dataDate": "2026-10-29",
+      "completeness": "詳細收錄",
+      "sourceDetails": [
+        {
+          "title": "基督教香港信義會：北區青少年綜合服務中心",
+          "publisher": "基督教香港信義會社會服務部",
+          "url": "https://ndit.elchk.org.hk/contactus.php",
+          "type": "服務機構頁"
+        },
+        {
+          "title": "新港北區通：社區地圖小冊子",
+          "publisher": "香港婦女中心協會慧思薈（上水）",
+          "url": null,
+          "type": "項目提供資料"
+        },
+        {
+          "title": "OpenStreetMap 地點及座標核對",
+          "publisher": "OpenStreetMap contributors",
+          "url": "https://www.openstreetmap.org/copyright",
+          "type": "開放地理資料"
+        }
+      ]
+    },
+    {
+      "id": "bgca-fanling-youth",
+      "name": "香港小童群益會賽馬會粉嶺青少年綜合服務中心",
+      "nameEn": "BGCA Jockey Club Fanling Children & Youth Integrated Services Centre",
+      "category": "support",
+      "subcategories": [
+        "兒童及青少年服務"
+      ],
+      "operator": "香港小童群益會",
+      "district": "粉嶺",
+      "subarea": "嘉福",
+      "address": "新界粉嶺嘉福邨福泰樓地下及 1 樓",
+      "lat": 22.4928522,
+      "lng": 114.1349589,
+      "precision": "建築物級",
+      "summary": "為兒童、青少年及其家庭提供成長活動、小組、支援及社區參與機會。",
+      "hours": {
+        "0": [],
+        "1": [
+          [
+            "10:00",
+            "18:00"
+          ]
+        ],
+        "2": [
+          [
+            "10:00",
+            "18:00"
+          ]
+        ],
+        "3": [
+          [
+            "10:00",
+            "18:00"
+          ]
+        ],
+        "4": [
+          [
+            "14:00",
+            "22:00"
+          ]
+        ],
+        "5": [
+          [
+            "14:00",
+            "22:00"
+          ]
+        ],
+        "6": [
+          [
+            "10:00",
+            "18:00"
+          ]
+        ]
+      },
+      "hoursText": "星期一至三及六 10:00–18:00；星期四、五 14:00–22:00",
+      "openingNotes": "星期日及公眾假期暫停開放；暑假、特別活動及個別服務時段可能調整。",
+      "phones": [
+        {
+          "label": "查詢",
+          "number": "2676 2392"
+        }
+      ],
+      "email": "flkf@bgca.org.hk",
+      "website": "https://www.bgca.org.hk/",
+      "appointment": "個別活動需預先報名，詳情以中心公佈為準。",
+      "services": [
+        "兒童及青少年活動",
+        "家庭支援",
+        "小組及社區參與"
+      ],
+      "targetGroups": [
+        "兒童",
+        "青少年",
+        "家庭"
+      ],
+      "fee": "low",
+      "feeNotes": "服務收費視活動而定。",
+      "sources": [
+        "bgca",
+        "osm"
+      ],
+      "dataDate": "2026-10-29",
+      "completeness": "詳細收錄",
+      "sourceDetails": [
+        {
+          "title": "香港小童群益會：賽馬會粉嶺青少年綜合服務中心",
+          "publisher": "香港小童群益會",
+          "url": "https://www.bgca.org.hk/",
+          "type": "服務機構頁"
+        },
+        {
+          "title": "OpenStreetMap 地點及座標核對",
+          "publisher": "OpenStreetMap contributors",
+          "url": "https://www.openstreetmap.org/copyright",
+          "type": "開放地理資料"
+        }
+      ]
+    },
+    {
+      "id": "hkcys-fanling-youth",
+      "name": "賽馬會粉嶺綜合青少年服務中心",
+      "nameEn": "HKCS Jockey Club Fanling Integrated Children & Youth Service Centre",
+      "category": "support",
+      "subcategories": [
+        "兒童及青少年服務",
+        "聚腳及社交公共空間"
+      ],
+      "operator": "香港青少年服務處",
+      "district": "粉嶺",
+      "subarea": "聯和墟",
+      "address": "新界粉嶺聯和墟和滿街 9 號御庭軒政府大樓 2 樓",
+      "lat": 22.5001175,
+      "lng": 114.1445884,
+      "precision": "建築物級",
+      "summary": "為區內兒童及青少年提供發展、社交、支援及社區參與服務。",
+      "hoursText": "公開頁未列固定訪客時間；中心開放及活動時段按預約安排",
+      "openingNotes": "部分服務只限會員或經社工／學校轉介，個別活動亦會在晚間或週末舉行；前往前請先致電 2668 2138。",
+      "phones": [
+        {
+          "label": "查詢",
+          "number": "2668 2138"
+        }
+      ],
+      "website": "https://www.hkcys.org.hk/",
+      "appointment": "活動及個別服務建議先聯絡中心。",
+      "targetGroups": [
+        "兒童",
+        "青少年",
+        "家庭"
+      ],
+      "fee": "low",
+      "feeNotes": "服務收費視活動而定。",
+      "sources": [
+        "hkcys",
+        "osm"
+      ],
+      "dataDate": "2026-10-29",
+      "completeness": "詳細收錄",
+      "sourceDetails": [
+        {
+          "title": "香港青少年服務處：賽馬會粉嶺綜合青少年服務中心",
+          "publisher": "香港青少年服務處",
+          "url": "https://www.hkcys.org.hk/",
+          "type": "服務機構頁"
+        },
+        {
+          "title": "OpenStreetMap 地點及座標核對",
+          "publisher": "OpenStreetMap contributors",
+          "url": "https://www.openstreetmap.org/copyright",
+          "type": "開放地理資料"
+        }
+      ]
+    },
+    {
+      "id": "hong-chi-fanling",
+      "name": "匡智粉嶺綜合復康中心",
+      "nameEn": "Hong Chi Fanling Integrative Rehabilitation Complex",
+      "category": "support",
+      "subcategories": [
+        "殘疾人士及復康服務",
+        "綜合家庭服務"
+      ],
+      "operator": "匡智會",
+      "district": "粉嶺",
+      "subarea": "粉嶺市中心",
+      "address": "新界粉嶺靈山路 23 號",
+      "lat": 22.5004265,
+      "lng": 114.137099,
+      "precision": "建築物級",
+      "summary": "提供復康及支援服務的綜合中心；服務名額、對象及轉介要求各異。",
+      "hoursText": "日間訓練與住宿服務時段不同；訪客及探訪須先預約",
+      "openingNotes": "服務以受資助復康計劃及轉介安排為主，並非一般開放式社區設施；到訪前請先致電確定接待安排。",
+      "phones": [
+        {
+          "label": "查詢",
+          "number": "3406 3313"
+        }
+      ],
+      "website": "https://www.hongchi.org.hk/",
+      "referral": "部分復康服務需經社工或相關專業轉介。",
+      "services": [
+        "復康支援",
+        "專業訓練",
+        "家庭及照顧者支援"
+      ],
+      "targetGroups": [
+        "殘疾人士",
+        "照顧者",
+        "家庭"
+      ],
+      "fee": "unknown",
+      "accessibility": [
+        "請向中心查詢具體無障礙入口及設施"
+      ],
+      "sources": [
+        "hongChi",
+        "osm"
+      ],
+      "dataDate": "2026-10-29",
+      "completeness": "基本收錄",
+      "sourceDetails": [
+        {
+          "title": "匡智會：服務單位",
+          "publisher": "匡智會",
+          "url": "https://www.hongchi.org.hk/",
+          "type": "服務機構頁"
+        },
+        {
+          "title": "OpenStreetMap 地點及座標核對",
+          "publisher": "OpenStreetMap contributors",
+          "url": "https://www.openstreetmap.org/copyright",
+          "type": "開放地理資料"
+        }
+      ]
+    },
+    {
+      "id": "north-district-hospital",
+      "name": "北區醫院",
+      "nameEn": "North District Hospital",
+      "category": "support",
+      "subcategories": [
+        "公營醫療及普通科服務",
+        "緊急求助資源"
+      ],
+      "operator": "醫院管理局",
+      "district": "上水",
+      "subarea": "清河",
+      "address": "新界上水保健路 9 號",
+      "lat": 22.4966901,
+      "lng": 114.1241733,
+      "precision": "入口級",
+      "summary": "設有 24 小時急症室及多項專科、日間、社康與復康服務。",
+      "phones": [
+        {
+          "label": "醫院總機",
+          "number": "2683 8888"
+        }
+      ],
+      "website": "https://www.ha.org.hk/visitor/ha_hosp_details.asp?Content_ID=100178&Lang=CHIB5",
+      "hours": {
+        "0": [
+          [
+            "00:00",
+            "24:00"
+          ]
+        ],
+        "1": [
+          [
+            "00:00",
+            "24:00"
+          ]
+        ],
+        "2": [
+          [
+            "00:00",
+            "24:00"
+          ]
+        ],
+        "3": [
+          [
+            "00:00",
+            "24:00"
+          ]
+        ],
+        "4": [
+          [
+            "00:00",
+            "24:00"
+          ]
+        ],
+        "5": [
+          [
+            "00:00",
+            "24:00"
+          ]
+        ],
+        "6": [
+          [
+            "00:00",
+            "24:00"
+          ]
+        ]
+      },
+      "hoursText": "急症室全日 24 小時服務",
+      "openingNotes": "專科門診及個別服務有獨立預約及時間，不可按急症室時間推斷。",
+      "appointment": "急症服務毋須預約；專科及專職服務一般需按醫管局安排。",
+      "services": [
+        "急症科",
+        "專科門診",
+        "日間及復康服務",
+        "社康服務"
+      ],
+      "targetGroups": [
+        "公眾",
+        "長者",
+        "家庭",
+        "兒童"
+      ],
+      "fee": "low",
+      "feeNotes": "按醫院管理局現行收費；合資格人士適用資助安排。",
+      "transport": [
+        "鄰近清河邨及保健路",
+        "可使用區內巴士或的士前往；緊急情況應直接致電 999"
+      ],
+      "tips": [
+        "本網站不能取代緊急求助；危及生命時請立即致電 999。",
+        "急症室輪候時間會變，請以醫管局公佈為準。"
+      ],
+      "sources": [
+        "hospital",
+        "osm"
+      ],
+      "dataDate": "2026-10-29",
+      "completeness": "詳細收錄",
+      "sourceDetails": [
+        {
+          "title": "醫院管理局：北區醫院",
+          "publisher": "醫院管理局",
+          "url": "https://www.ha.org.hk/visitor/ha_hosp_details.asp?Content_ID=100178&Lang=CHIB5",
+          "type": "公立醫院頁"
+        },
+        {
+          "title": "OpenStreetMap 地點及座標核對",
+          "publisher": "OpenStreetMap contributors",
+          "url": "https://www.openstreetmap.org/copyright",
+          "type": "開放地理資料"
+        }
+      ]
+    },
+    {
+      "id": "shek-wu-hui-clinic",
+      "name": "北區家庭醫學中心（前石湖墟賽馬會普通科門診診所）",
+      "nameEn": "North District Family Medicine Centre",
+      "category": "support",
+      "subcategories": [
+        "公營醫療及普通科服務"
+      ],
+      "operator": "醫院管理局",
+      "district": "上水",
+      "subarea": "清河",
+      "address": "新界上水衛和街 3 號北區社區健康中心大樓 3 樓",
+      "lat": 22.4983485,
+      "lng": 114.1276092,
+      "precision": "樓層入口",
+      "summary": "位於北區社區健康中心大樓的家庭醫學門診，2024 年底由石湖墟賽馬會普通科門診診所遷入。",
+      "phones": [
+        {
+          "label": "診所查詢",
+          "number": "2957 5186"
+        },
+        {
+          "label": "電話預約",
+          "number": "3157 0965"
+        }
+      ],
+      "website": "https://www.ha.org.hk/HAConnect/zh/WhatIsNew/Details/1648",
+      "hours": {
+        "0": [
+          [
+            "09:00",
+            "13:00"
+          ]
+        ],
+        "1": [
+          [
+            "09:00",
+            "13:00"
+          ],
+          [
+            "14:00",
+            "17:00"
+          ],
+          [
+            "18:00",
+            "22:00"
+          ]
+        ],
+        "2": [
+          [
+            "09:00",
+            "13:00"
+          ],
+          [
+            "14:00",
+            "17:00"
+          ],
+          [
+            "18:00",
+            "22:00"
+          ]
+        ],
+        "3": [
+          [
+            "09:00",
+            "13:00"
+          ],
+          [
+            "14:00",
+            "17:00"
+          ],
+          [
+            "18:00",
+            "22:00"
+          ]
+        ],
+        "4": [
+          [
+            "09:00",
+            "13:00"
+          ],
+          [
+            "14:00",
+            "17:00"
+          ],
+          [
+            "18:00",
+            "22:00"
+          ]
+        ],
+        "5": [
+          [
+            "09:00",
+            "13:00"
+          ],
+          [
+            "14:00",
+            "17:00"
+          ],
+          [
+            "18:00",
+            "22:00"
+          ]
+        ],
+        "6": [
+          [
+            "09:00",
+            "13:00"
+          ]
+        ]
+      },
+      "hoursText": "星期一至五 09:00–13:00、14:00–17:00、18:00–22:00；星期六、日 09:00–13:00",
+      "openingNotes": "偶發疾病一般須經電話或 HA Go 預約。此為診症時間，登記及截籌安排可能較早截止。",
+      "appointment": "可經電話預約系統或 HA Go 預約；長期病患者按覆診安排。",
+      "services": [
+        "家庭醫學門診",
+        "跨專業護理",
+        "慢性疾病管理",
+        "病人教育及支援"
+      ],
+      "targetGroups": [
+        "公眾",
+        "長者",
+        "家庭"
+      ],
+      "fee": "low",
+      "feeNotes": "按醫院管理局現行基層醫療收費。",
+      "sources": [
+        "clinic",
+        "osm"
+      ],
+      "dataDate": "2026-10-29",
+      "completeness": "基本收錄",
+      "sourceDetails": [
+        {
+          "title": "醫院管理局：北區家庭醫學中心普通科門診服務",
+          "publisher": "醫院管理局",
+          "url": "https://www.ha.org.hk/HAConnect/zh/WhatIsNew/Details/1648",
+          "type": "公營醫療服務頁"
+        },
+        {
+          "title": "OpenStreetMap 地點及座標核對",
+          "publisher": "OpenStreetMap contributors",
+          "url": "https://www.openstreetmap.org/copyright",
+          "type": "開放地理資料"
+        }
+      ]
+    },
+    {
+      "id": "north-district-government-offices",
+      "name": "北區政府合署",
+      "nameEn": "North District Government Offices",
+      "category": "support",
+      "subcategories": [
+        "政府部門及公共查詢",
+        "房屋及經濟援助"
+      ],
+      "operator": "香港特別行政區政府",
+      "district": "粉嶺",
+      "subarea": "粉嶺市中心",
+      "address": "新界粉嶺璧峰路 3 號",
+      "lat": 22.4945993,
+      "lng": 114.1383053,
+      "precision": "入口級",
+      "summary": "集合民政、家庭服務、郵政及其他政府服務的地區政府辦公大樓。",
+      "hours": {
+        "0": [],
+        "1": [
+          [
+            "09:00",
+            "19:00"
+          ]
+        ],
+        "2": [
+          [
+            "09:00",
+            "19:00"
+          ]
+        ],
+        "3": [
+          [
+            "09:00",
+            "19:00"
+          ]
+        ],
+        "4": [
+          [
+            "09:00",
+            "19:00"
+          ]
+        ],
+        "5": [
+          [
+            "09:00",
+            "19:00"
+          ]
+        ],
+        "6": []
+      },
+      "hoursText": "北區民政諮詢服務中心：星期一至五約 09:00–19:00",
+      "openingNotes": "各部門及櫃位時間不同；上述只反映公共查詢服務的已知安排。",
+      "appointment": "部分服務需預約，請按所屬部門查詢。",
+      "services": [
+        "民政諮詢",
+        "家庭服務",
+        "公共查詢",
+        "郵政服務"
+      ],
+      "targetGroups": [
+        "公眾",
+        "家庭"
+      ],
+      "fee": "free",
+      "feeNotes": "公共查詢一般不收費；個別申請費用另計。",
+      "transport": [
+        "港鐵粉嶺站一帶，經新運路及璧峰路前往"
+      ],
+      "sources": [
+        "had",
+        "osm"
+      ],
+      "dataDate": "2026-10-29",
+      "completeness": "詳細收錄",
+      "sourceDetails": [
+        {
+          "title": "政府電話簿：北區民政事務處",
+          "publisher": "香港特別行政區政府",
+          "url": "https://tel.directory.gov.hk/0253000038_CHI.html",
+          "type": "政府機構頁"
+        },
+        {
+          "title": "OpenStreetMap 地點及座標核對",
+          "publisher": "OpenStreetMap contributors",
+          "url": "https://www.openstreetmap.org/copyright",
+          "type": "開放地理資料"
+        }
+      ]
+    },
+    {
+      "id": "sheung-shui-job-centre",
+      "name": "上水就業中心",
+      "nameEn": "Sheung Shui Job Centre",
+      "category": "support",
+      "subcategories": [
+        "就業、培訓及進修"
+      ],
+      "operator": "勞工處",
+      "district": "上水",
+      "subarea": "上水市中心",
+      "address": "新界上水龍琛路 39 號上水廣場 20 樓 2001–2006 室",
+      "lat": 22.5025458,
+      "lng": 114.1278301,
+      "precision": "入口級",
+      "summary": "提供免費職位搜尋、就業諮詢、登記、轉介及求職設施。",
+      "hours": {
+        "0": [],
+        "1": [
+          [
+            "09:00",
+            "17:30"
+          ]
+        ],
+        "2": [
+          [
+            "09:00",
+            "17:30"
+          ]
+        ],
+        "3": [
+          [
+            "09:00",
+            "17:30"
+          ]
+        ],
+        "4": [
+          [
+            "09:00",
+            "17:30"
+          ]
+        ],
+        "5": [
+          [
+            "09:00",
+            "17:30"
+          ]
+        ],
+        "6": [
+          [
+            "09:00",
+            "12:00"
+          ]
+        ]
+      },
+      "hoursText": "星期一至五 09:00–17:30；星期六 09:00–12:00",
+      "openingNotes": "星期日及公眾假期休息。招聘活動、個別服務及櫃位安排可能另設時段。",
+      "phones": [
+        {
+          "label": "查詢",
+          "number": "3692 4532"
+        }
+      ],
+      "website": "https://www.jobs.gov.hk/",
+      "appointment": "可親臨或先查閱互動就業服務；個別服務安排請向中心確認。",
+      "services": [
+        "職位空缺查詢",
+        "就業諮詢及轉介",
+        "求職設施",
+        "新來港人士就業資訊"
+      ],
+      "targetGroups": [
+        "新來港人士",
+        "青少年",
+        "成人",
+        "求職人士"
+      ],
+      "eligibility": "不同職位及服務有各自條件。",
+      "documents": [
+        "登記時一般須出示有效身份證明文件；新來港人士可能需相關入境文件。"
+      ],
+      "fee": "free",
+      "feeNotes": "勞工處就業服務不收取費用。",
+      "languages": [
+        "廣東話",
+        "英語",
+        "普通話（個別服務安排）"
+      ],
+      "transport": [
+        "港鐵上水站 A4 出口一帶，經商場前往"
+      ],
+      "sources": [
+        "labour",
+        "providedBooklet",
+        "osm"
+      ],
+      "dataDate": "2026-10-29",
+      "completeness": "詳細收錄",
+      "sourceDetails": [
+        {
+          "title": "勞工處：上水就業中心",
+          "publisher": "勞工處",
+          "url": "https://www.labour.gov.hk/tc/public/pdf/eip/EasyToUse_TC.pdf",
+          "type": "政府服務資料"
+        },
+        {
+          "title": "新港北區通：社區地圖小冊子",
+          "publisher": "香港婦女中心協會慧思薈（上水）",
+          "url": null,
+          "type": "項目提供資料"
+        },
+        {
+          "title": "OpenStreetMap 地點及座標核對",
+          "publisher": "OpenStreetMap contributors",
+          "url": "https://www.openstreetmap.org/copyright",
+          "type": "開放地理資料"
+        }
+      ]
+    },
+    {
+      "id": "pharm-ywca-sheung-shui",
+      "name": "藥健同心女青社區藥房",
+      "nameEn": "PHARM+ YWCA Community Pharmacy",
+      "category": "support",
+      "subcategories": [
+        "社區藥房及健康服務"
+      ],
+      "operator": "香港基督教女青年會",
+      "district": "上水",
+      "subarea": "上水市中心",
+      "address": "新界上水龍琛路 48 號上水匯 9 樓 903 室",
+      "lat": 22.5032372,
+      "lng": 114.1280822,
+      "precision": "入口級",
+      "summary": "由註冊藥劑師提供配藥、藥物管理、小病小痛諮詢及社區藥物教育。",
+      "phones": [
+        {
+          "label": "熱線",
+          "number": "2511 6020"
+        },
+        {
+          "label": "WhatsApp",
+          "number": "6239 5701"
+        }
+      ],
+      "website": "https://www.ywca.org.hk/index.php/zh-hant/最新消息/藥健同心女青社區藥房現已投入服務",
+      "hours": {
+        "0": [],
+        "1": [
+          [
+            "09:00",
+            "18:00"
+          ]
+        ],
+        "2": [
+          [
+            "09:00",
+            "18:00"
+          ]
+        ],
+        "3": [
+          [
+            "09:00",
+            "18:00"
+          ]
+        ],
+        "4": [
+          [
+            "09:00",
+            "18:00"
+          ]
+        ],
+        "5": [
+          [
+            "09:00",
+            "18:00"
+          ]
+        ],
+        "6": [
+          [
+            "09:00",
+            "18:00"
+          ]
+        ]
+      },
+      "hoursText": "星期一至六 09:00–18:00；星期日及公眾假期休息",
+      "appointment": "配藥及用藥諮詢可先致電或 WhatsApp 查詢。",
+      "services": [
+        "社區配藥",
+        "藥物管理",
+        "小病小痛管理",
+        "藥物教育"
+      ],
+      "targetGroups": [
+        "公眾",
+        "長者",
+        "照顧者",
+        "慢性病患者"
+      ],
+      "fee": "paid",
+      "feeNotes": "藥物及個別服務按項目收費；請向藥房查詢。",
+      "languages": [
+        "廣東話",
+        "英語",
+        "普通話（個別安排）"
+      ],
+      "sources": [
+        "pharm",
+        "providedBooklet",
+        "osm"
+      ],
+      "dataDate": "2026-10-29",
+      "completeness": "詳細收錄",
+      "sourceDetails": [
+        {
+          "title": "藥健同心女青社區藥房",
+          "publisher": "香港基督教女青年會",
+          "url": "https://www.ywca.org.hk/index.php/zh-hant/最新消息/藥健同心女青社區藥房現已投入服務",
+          "type": "服務機構頁"
+        },
+        {
+          "title": "新港北區通：社區地圖小冊子",
+          "publisher": "香港婦女中心協會慧思薈（上水）",
+          "url": null,
+          "type": "項目提供資料"
+        },
+        {
+          "title": "OpenStreetMap 地點及座標核對",
+          "publisher": "OpenStreetMap contributors",
+          "url": "https://www.openstreetmap.org/copyright",
+          "type": "開放地理資料"
+        }
+      ]
+    },
+    {
+      "id": "sheung-shui-public-library",
+      "name": "上水公共圖書館",
+      "nameEn": "Sheung Shui Public Library",
+      "category": "support",
+      "subcategories": [
+        "教育及入學支援",
+        "室內公共休憩空間"
+      ],
+      "operator": "香港公共圖書館",
+      "district": "上水",
+      "subarea": "石湖墟",
+      "address": "新界上水智昌路 13 號石湖墟市政大廈 3 樓",
+      "lat": 22.5018392,
+      "lng": 114.130704,
+      "precision": "入口級",
+      "summary": "提供成人及兒童館藏、閱覽空間、電腦資訊站及圖書館服務。",
+      "phones": [
+        {
+          "label": "查詢",
+          "number": "2679 2804"
+        }
+      ],
+      "email": "sspl@lcsd.gov.hk",
+      "website": "https://www.hkpl.gov.hk/tc/locations/north/library/sheung-shui.html",
+      "hours": {
+        "0": [
+          [
+            "09:00",
+            "17:00"
+          ]
+        ],
+        "1": [
+          [
+            "12:00",
+            "20:00"
+          ]
+        ],
+        "2": [
+          [
+            "09:00",
+            "20:00"
+          ]
+        ],
+        "3": [
+          [
+            "09:00",
+            "20:00"
+          ]
+        ],
+        "4": [
+          [
+            "09:00",
+            "20:00"
+          ]
+        ],
+        "5": [
+          [
+            "09:00",
+            "20:00"
+          ]
+        ],
+        "6": [
+          [
+            "09:00",
+            "20:00"
+          ]
+        ]
+      },
+      "hoursText": "星期一 12:00–20:00；星期二至六 09:00–20:00；星期日 09:00–17:00",
+      "openingNotes": "公眾假期及節日前夕另有安排。",
+      "services": [
+        "成人及兒童借閱",
+        "參考及閱覽",
+        "電腦資訊站"
+      ],
+      "targetGroups": [
+        "公眾",
+        "兒童",
+        "青少年",
+        "長者"
+      ],
+      "fee": "free",
+      "feeNotes": "免費入館；逾期、影印等按圖書館收費。",
+      "facilities": [
+        "成人及兒童館藏",
+        "電腦資訊站",
+        "閱覽座位"
+      ],
+      "transport": [
+        "近港鐵上水站及區內大型商場",
+        "位於石湖墟市政大廈內"
+      ],
+      "tips": [
+        "館內請保持安靜，使用電腦設施須遵守圖書館規則。"
+      ],
+      "story": {
+        "title": "義工推薦：上水公共圖書館",
+        "text": "「提供成人圖書、兒童圖書及多元藏書，並設電腦資訊站；近港鐵站及大商場，是溫馨閱讀的好去處。」",
+        "source": "providedNotes"
+      },
+      "sources": [
+        "hkplSS",
+        "hkplHours",
+        "providedNotes",
+        "osm"
+      ],
+      "dataDate": "2026-10-29",
+      "completeness": "詳細收錄",
+      "sourceDetails": [
+        {
+          "title": "香港公共圖書館：上水公共圖書館",
+          "publisher": "香港公共圖書館",
+          "url": "https://www.hkpl.gov.hk/tc/locations/north/library/sheung-shui.html",
+          "type": "政府服務頁"
+        },
+        {
+          "title": "香港公共圖書館開放時間",
+          "publisher": "香港公共圖書館",
+          "url": "https://www.hkpl.gov.hk/tc/locations/opening-hours-02.html",
+          "type": "官方開放時間"
+        },
+        {
+          "title": "義工手寫介紹（項目提供）",
+          "publisher": "社區導航大使小組",
+          "url": null,
+          "type": "項目提供資料"
+        },
+        {
+          "title": "OpenStreetMap 地點及座標核對",
+          "publisher": "OpenStreetMap contributors",
+          "url": "https://www.openstreetmap.org/copyright",
+          "type": "開放地理資料"
+        }
+      ]
+    },
+    {
+      "id": "fanling-public-library",
+      "name": "粉嶺公共圖書館",
+      "nameEn": "Fanling Public Library",
+      "category": "support",
+      "subcategories": [
+        "教育及入學支援",
+        "室內公共休憩空間"
+      ],
+      "operator": "香港公共圖書館",
+      "district": "粉嶺",
+      "subarea": "聯和墟",
+      "address": "新界粉嶺和滿街 9 號 2 樓",
+      "lat": 22.5001175,
+      "lng": 114.1445884,
+      "precision": "入口級",
+      "summary": "服務粉嶺及聯和墟一帶的分區圖書館，提供借閱、閱覽及資訊服務。",
+      "phones": [
+        {
+          "label": "查詢",
+          "number": "2669 4444"
+        }
+      ],
+      "email": "flpl@lcsd.gov.hk",
+      "website": "https://www.hkpl.gov.hk/tc/locations/north/library/fanling.html",
+      "hours": {
+        "0": [
+          [
+            "09:00",
+            "17:00"
+          ]
+        ],
+        "1": [
+          [
+            "12:00",
+            "20:00"
+          ]
+        ],
+        "2": [
+          [
+            "09:00",
+            "20:00"
+          ]
+        ],
+        "3": [
+          [
+            "09:00",
+            "20:00"
+          ]
+        ],
+        "4": [
+          [
+            "09:00",
+            "20:00"
+          ]
+        ],
+        "5": [
+          [
+            "09:00",
+            "20:00"
+          ]
+        ],
+        "6": [
+          [
+            "09:00",
+            "20:00"
+          ]
+        ]
+      },
+      "hoursText": "星期一 12:00–20:00；星期二至六 09:00–20:00；星期日 09:00–17:00",
+      "openingNotes": "公眾假期及節日前夕另有安排。",
+      "services": [
+        "借閱及閱覽",
+        "兒童館藏",
+        "參考及資訊服務"
+      ],
+      "targetGroups": [
+        "公眾",
+        "兒童",
+        "青少年",
+        "長者"
+      ],
+      "fee": "free",
+      "feeNotes": "免費入館；個別服務按圖書館收費。",
+      "transport": [
+        "鄰近聯和墟街市及巴士路線",
+        "可與街市、熟食中心行程一同安排"
+      ],
+      "sources": [
+        "hkplFL",
+        "hkplHours",
+        "providedBooklet",
+        "osm"
+      ],
+      "dataDate": "2026-10-29",
+      "completeness": "詳細收錄",
+      "sourceDetails": [
+        {
+          "title": "香港公共圖書館：粉嶺公共圖書館",
+          "publisher": "香港公共圖書館",
+          "url": "https://www.hkpl.gov.hk/tc/locations/north/library/fanling.html",
+          "type": "政府服務頁"
+        },
+        {
+          "title": "香港公共圖書館開放時間",
+          "publisher": "香港公共圖書館",
+          "url": "https://www.hkpl.gov.hk/tc/locations/opening-hours-02.html",
+          "type": "官方開放時間"
+        },
+        {
+          "title": "新港北區通：社區地圖小冊子",
+          "publisher": "香港婦女中心協會慧思薈（上水）",
+          "url": null,
+          "type": "項目提供資料"
+        },
+        {
+          "title": "OpenStreetMap 地點及座標核對",
+          "publisher": "OpenStreetMap contributors",
+          "url": "https://www.openstreetmap.org/copyright",
+          "type": "開放地理資料"
+        }
+      ]
+    },
+    {
+      "id": "fanling-south-public-library",
+      "name": "粉嶺南公共圖書館",
+      "nameEn": "Fanling South Public Library",
+      "category": "support",
+      "subcategories": [
+        "教育及入學支援",
+        "室內公共休憩空間"
+      ],
+      "operator": "香港公共圖書館",
+      "district": "粉嶺",
+      "subarea": "粉嶺南",
+      "address": "新界粉嶺一鳴路 23 號牽晴間購物廣場 1 樓 104A 及 105A 號舖",
+      "lat": 22.4866343,
+      "lng": 114.1438851,
+      "precision": "入口級",
+      "summary": "粉嶺南的小型公共圖書館，方便附近居民借閱及使用閱覽服務。",
+      "phones": [
+        {
+          "label": "查詢",
+          "number": "2670 7408"
+        }
+      ],
+      "email": "flspl@lcsd.gov.hk",
+      "website": "https://www.hkpl.gov.hk/tc/locations/north/library/fanling-south.html",
+      "hours": {
+        "0": [
+          [
+            "09:00",
+            "17:00"
+          ]
+        ],
+        "1": [],
+        "2": [
+          [
+            "09:00",
+            "19:00"
+          ]
+        ],
+        "3": [
+          [
+            "09:00",
+            "19:00"
+          ]
+        ],
+        "4": [
+          [
+            "09:00",
+            "19:00"
+          ]
+        ],
+        "5": [
+          [
+            "09:00",
+            "19:00"
+          ]
+        ],
+        "6": [
+          [
+            "09:00",
+            "19:00"
+          ]
+        ]
+      },
+      "hoursText": "星期一休息；星期二至六 09:00–19:00；星期日 09:00–17:00",
+      "openingNotes": "公眾假期安排以香港公共圖書館最新公佈為準。",
+      "services": [
+        "借閱及閱覽",
+        "兒童館藏",
+        "讀者查詢"
+      ],
+      "targetGroups": [
+        "公眾",
+        "兒童",
+        "青少年",
+        "長者",
+        "家庭"
+      ],
+      "fee": "free",
+      "feeNotes": "免費入館；個別服務按圖書館收費。",
+      "sources": [
+        "hkplFLS",
+        "hkplHours",
+        "osm"
+      ],
+      "dataDate": "2026-10-29",
+      "completeness": "詳細收錄",
+      "sourceDetails": [
+        {
+          "title": "香港公共圖書館：粉嶺南公共圖書館",
+          "publisher": "香港公共圖書館",
+          "url": "https://www.hkpl.gov.hk/tc/locations/north/library/fanling-south.html",
+          "type": "政府服務頁"
+        },
+        {
+          "title": "香港公共圖書館開放時間",
+          "publisher": "香港公共圖書館",
+          "url": "https://www.hkpl.gov.hk/tc/locations/opening-hours-02.html",
+          "type": "官方開放時間"
+        },
+        {
+          "title": "OpenStreetMap 地點及座標核對",
+          "publisher": "OpenStreetMap contributors",
+          "url": "https://www.openstreetmap.org/copyright",
+          "type": "開放地理資料"
+        }
+      ]
+    },
+    {
+      "id": "sheung-shui-station",
+      "name": "上水站",
+      "nameEn": "Sheung Shui Station",
+      "category": "daily",
+      "subcategories": [
+        "港鐵設施",
+        "巴士及小巴設施"
+      ],
+      "operator": "港鐵",
+      "district": "上水",
+      "subarea": "上水市中心",
+      "address": "新界上水彩園路／新運路一帶",
+      "lat": 22.501878,
+      "lng": 114.1275832,
+      "precision": "車站級",
+      "summary": "東鐵綫車站，連接上水市中心、巴士站及的士站，是區內主要交通節點。",
+      "hours": {
+        "0": [
+          [
+            "05:30",
+            "01:17"
+          ]
+        ],
+        "1": [
+          [
+            "05:30",
+            "01:17"
+          ]
+        ],
+        "2": [
+          [
+            "05:30",
+            "01:17"
+          ]
+        ],
+        "3": [
+          [
+            "05:30",
+            "01:17"
+          ]
+        ],
+        "4": [
+          [
+            "05:30",
+            "01:17"
+          ]
+        ],
+        "5": [
+          [
+            "05:30",
+            "01:17"
+          ]
+        ],
+        "6": [
+          [
+            "05:30",
+            "01:17"
+          ]
+        ]
+      },
+      "hoursText": "首班車約 05:30；尾班車約 01:17（視目的地而定）",
+      "openingNotes": "列車服務時間可能因方向、星期日、假期及工程調整；請以港鐵當日時間表為準。",
+      "website": "https://www.mtr.com.hk/ch/customer/services/system_map.html",
+      "services": [
+        "東鐵綫客運服務",
+        "巴士及小巴轉乘",
+        "的士站"
+      ],
+      "targetGroups": [
+        "公眾"
+      ],
+      "fee": "paid",
+      "feeNotes": "按港鐵及公共交通現行票價。",
+      "transport": [
+        "A4 出口一帶可前往上水廣場；其他出口方向請以站內指示為準"
+      ],
+      "tips": [
+        "繁忙時段人流較多；携帶行李或推車時預留轉乘時間。"
+      ],
+      "story": {
+        "title": "義工推薦：上水交通",
+        "text": "「上水站連接東鐵綫、巴士總站及的士站；手記記錄的士站位於 A3 出口。」實際交通安排以現場指示及營運機構公布為準。",
+        "source": "providedNotes"
+      },
+      "sources": [
+        "mtr",
+        "providedNotes",
+        "osm"
+      ],
+      "dataDate": "2026-10-29",
+      "completeness": "詳細收錄",
+      "sourceDetails": [
+        {
+          "title": "港鐵：車站資訊",
+          "publisher": "MTR",
+          "url": "https://www.mtr.com.hk/ch/customer/services/system_map.html",
+          "type": "公共交通官方網站"
+        },
+        {
+          "title": "義工手寫介紹（項目提供）",
+          "publisher": "社區導航大使小組",
+          "url": null,
+          "type": "項目提供資料"
+        },
+        {
+          "title": "OpenStreetMap 地點及座標核對",
+          "publisher": "OpenStreetMap contributors",
+          "url": "https://www.openstreetmap.org/copyright",
+          "type": "開放地理資料"
+        }
+      ]
+    },
+    {
+      "id": "fanling-station",
+      "name": "粉嶺站",
+      "nameEn": "Fanling Station",
+      "category": "daily",
+      "subcategories": [
+        "港鐵設施",
+        "巴士及小巴設施"
+      ],
+      "operator": "港鐵",
+      "district": "粉嶺",
+      "subarea": "粉嶺市中心",
+      "address": "新界粉嶺粉嶺車站路",
+      "lat": 22.4915483,
+      "lng": 114.1395947,
+      "precision": "車站級",
+      "summary": "東鐵綫粉嶺站，連接粉嶺市中心、巴士及小巴網絡。",
+      "hours": {
+        "0": [
+          [
+            "05:42",
+            "01:05"
+          ]
+        ],
+        "1": [
+          [
+            "05:42",
+            "01:05"
+          ]
+        ],
+        "2": [
+          [
+            "05:42",
+            "01:05"
+          ]
+        ],
+        "3": [
+          [
+            "05:42",
+            "01:05"
+          ]
+        ],
+        "4": [
+          [
+            "05:42",
+            "01:05"
+          ]
+        ],
+        "5": [
+          [
+            "05:42",
+            "01:05"
+          ]
+        ],
+        "6": [
+          [
+            "05:42",
+            "01:05"
+          ]
+        ]
+      },
+      "hoursText": "首班車約 05:42；尾班車約 01:05（視目的地而定）",
+      "openingNotes": "列車服務時間可能因方向、星期日、假期及工程調整；請以港鐵當日時間表為準。",
+      "website": "https://www.mtr.com.hk/ch/customer/services/system_map.html",
+      "services": [
+        "東鐵綫客運服務",
+        "巴士及小巴轉乘"
+      ],
+      "targetGroups": [
+        "公眾"
+      ],
+      "fee": "paid",
+      "feeNotes": "按公共交通現行票價。",
+      "transport": [
+        "車站出口可前往粉嶺市中心、商場及巴士站；依現場指示"
+      ],
+      "sources": [
+        "mtr",
+        "osm"
+      ],
+      "dataDate": "2026-10-29",
+      "completeness": "基本收錄",
+      "sourceDetails": [
+        {
+          "title": "港鐵：車站資訊",
+          "publisher": "MTR",
+          "url": "https://www.mtr.com.hk/ch/customer/services/system_map.html",
+          "type": "公共交通官方網站"
+        },
+        {
+          "title": "OpenStreetMap 地點及座標核對",
+          "publisher": "OpenStreetMap contributors",
+          "url": "https://www.openstreetmap.org/copyright",
+          "type": "開放地理資料"
+        }
+      ]
+    },
+    {
+      "id": "sheung-shui-bus-terminus",
+      "name": "上水巴士總站（上水轉車站 A 區）",
+      "nameEn": "Sheung Shui Bus Terminus",
+      "category": "daily",
+      "subcategories": [
+        "巴士及小巴設施",
+        "公共運輸交匯處"
+      ],
+      "operator": "九龍巴士、龍運巴士及城巴等",
+      "district": "上水",
+      "subarea": "上水市中心",
+      "address": "新界上水龍琛路 39 號上水廣場地下",
+      "lat": 22.5025389,
+      "lng": 114.1278306,
+      "precision": "總站級",
+      "summary": "上水市中心的主要巴士總站及轉乘節點，位於上水廣場地下，鄰近港鐵上水站及小巴站。",
+      "website": "https://search.kmb.hk/KMBWebSite/?action=routesearch&route=W3&lang=zh-hk",
+      "hours": {
+        "0": [
+          [
+            "00:00",
+            "24:00"
+          ]
+        ],
+        "1": [
+          [
+            "00:00",
+            "24:00"
+          ]
+        ],
+        "2": [
+          [
+            "00:00",
+            "24:00"
+          ]
+        ],
+        "3": [
+          [
+            "00:00",
+            "24:00"
+          ]
+        ],
+        "4": [
+          [
+            "00:00",
+            "24:00"
+          ]
+        ],
+        "5": [
+          [
+            "00:00",
+            "24:00"
+          ]
+        ],
+        "6": [
+          [
+            "00:00",
+            "24:00"
+          ]
+        ]
+      },
+      "hoursText": "車站及通道全日開放；各路線服務時間不同",
+      "openingNotes": "站內通道一般全日開放，但各路線首末班次、特別班次及臨時改動各有不同；以九巴、龍運、城巴及現場站牌為準。",
+      "services": [
+        "專營巴士總站",
+        "巴士轉乘",
+        "專線小巴接駁",
+        "鄰近港鐵上水站"
+      ],
+      "targetGroups": [
+        "公眾"
+      ],
+      "fee": "paid",
+      "feeNotes": "按各巴士及小巴路線現行票價；八達通及轉乘優惠以營運商公布為準。",
+      "facilities": [
+        "巴士候車月台",
+        "乘客資訊及站長設施",
+        "小巴及的士接駁"
+      ],
+      "transport": [
+        "位於上水廣場地下，鄰近港鐵上水站 A4 出口",
+        "上水轉車站另設新運路及彩園路一帶的 B 至 D 區站位"
+      ],
+      "tips": [
+        "上水轉車站分為多個區域，跨區路線及轉乘站可能相距數分鐘步程。",
+        "出發前按路線編號核對月台及現場指示。"
+      ],
+      "sources": [
+        "kmbStops",
+        "osm"
+      ],
+      "dataDate": "2026-10-29",
+      "completeness": "詳細收錄",
+      "sourceDetails": [
+        {
+          "title": "九巴：香港巴士路線及車站搜尋",
+          "publisher": "九龍巴士（一九三三）有限公司",
+          "url": "https://search.kmb.hk/KMBWebSite/?action=routesearch&route=W3&lang=zh-hk",
+          "type": "公共交通營運商路線資料"
+        },
+        {
+          "title": "OpenStreetMap 地點及座標核對",
+          "publisher": "OpenStreetMap contributors",
+          "url": "https://www.openstreetmap.org/copyright",
+          "type": "開放地理資料"
+        }
+      ]
+    },
+    {
+      "id": "fanling-station-bus-terminus",
+      "name": "粉嶺站巴士總站（粉嶺站轉車站）",
+      "nameEn": "Fanling Station Bus Terminus / Fanling Station Interchange",
+      "category": "daily",
+      "subcategories": [
+        "巴士及小巴設施",
+        "公共運輸交匯處"
+      ],
+      "operator": "九龍巴士、龍運巴士等",
+      "district": "粉嶺",
+      "subarea": "粉嶺市中心",
+      "address": "新界粉嶺粉嶺車站路近港鐵粉嶺站",
+      "lat": 22.4918091,
+      "lng": 114.1392968,
+      "precision": "月台級",
+      "summary": "粉嶺站一帶的巴士總站及轉乘節點，月台分布於粉嶺車站路與百和路，連接港鐵、巴士及專線小巴。",
+      "website": "https://search.kmb.hk/KMBWebSite/?action=routesearch&route=W3&lang=zh-hk",
+      "hours": {
+        "0": [
+          [
+            "00:00",
+            "24:00"
+          ]
+        ],
+        "1": [
+          [
+            "00:00",
+            "24:00"
+          ]
+        ],
+        "2": [
+          [
+            "00:00",
+            "24:00"
+          ]
+        ],
+        "3": [
+          [
+            "00:00",
+            "24:00"
+          ]
+        ],
+        "4": [
+          [
+            "00:00",
+            "24:00"
+          ]
+        ],
+        "5": [
+          [
+            "00:00",
+            "24:00"
+          ]
+        ],
+        "6": [
+          [
+            "00:00",
+            "24:00"
+          ]
+        ]
+      },
+      "hoursText": "公共交通轉乘設施全日開放；各路線服務時間不同",
+      "openingNotes": "轉乘設施及街道月台可供候車，但各路線服務時間、月台位置及臨時改道安排不同；以營運商和現場指示為準。",
+      "services": [
+        "巴士總站及轉乘",
+        "跨區巴士",
+        "專線小巴接駁",
+        "鄰近港鐵粉嶺站"
+      ],
+      "targetGroups": [
+        "公眾"
+      ],
+      "fee": "paid",
+      "feeNotes": "按各巴士及小巴路線現行票價；八達通及轉乘優惠以營運商公布為準。",
+      "facilities": [
+        "粉嶺車站路及百和路巴士月台",
+        "港鐵站行人接駁",
+        "小巴及的士接駁"
+      ],
+      "transport": [
+        "月台分布於粉嶺車站路及百和路一帶，近港鐵粉嶺站多個出口",
+        "不是單一封閉總站，需按路線編號使用相應月台"
+      ],
+      "tips": [
+        "九巴及龍運統稱相鄰月台為「粉嶺站轉車站」，上車前應核對月台代號及行車方向。",
+        "部分路線只在繁忙時間或特定日子服務。"
+      ],
+      "sources": [
+        "kmbStops",
+        "osm"
+      ],
+      "dataDate": "2026-10-29",
+      "completeness": "詳細收錄",
+      "sourceDetails": [
+        {
+          "title": "九巴：香港巴士路線及車站搜尋",
+          "publisher": "九龍巴士（一九三三）有限公司",
+          "url": "https://search.kmb.hk/KMBWebSite/?action=routesearch&route=W3&lang=zh-hk",
+          "type": "公共交通營運商路線資料"
+        },
+        {
+          "title": "OpenStreetMap 地點及座標核對",
+          "publisher": "OpenStreetMap contributors",
+          "url": "https://www.openstreetmap.org/copyright",
+          "type": "開放地理資料"
+        }
+      ]
+    },
+    {
+      "id": "shek-wu-hui-market",
+      "name": "石湖墟街市",
+      "nameEn": "Shek Wu Hui Market",
+      "category": "daily",
+      "subcategories": [
+        "街市",
+        "熟食中心",
+        "屋邨商業設施"
+      ],
+      "operator": "食物環境衞生署",
+      "district": "上水",
+      "subarea": "石湖墟",
+      "address": "新界上水智昌路 13 號石湖墟市政大廈",
+      "lat": 22.5018346,
+      "lng": 114.1303712,
+      "precision": "建築物級",
+      "summary": "售賣鮮活食品、乾濕貨及日用品的公眾街市；同座大廈亦設熟食中心及上水公共圖書館。",
+      "hours": {
+        "0": [
+          [
+            "06:00",
+            "20:00"
+          ]
+        ],
+        "1": [
+          [
+            "06:00",
+            "20:00"
+          ]
+        ],
+        "2": [
+          [
+            "06:00",
+            "20:00"
+          ]
+        ],
+        "3": [
+          [
+            "06:00",
+            "20:00"
+          ]
+        ],
+        "4": [
+          [
+            "06:00",
+            "20:00"
+          ]
+        ],
+        "5": [
+          [
+            "06:00",
+            "20:00"
+          ]
+        ],
+        "6": [
+          [
+            "06:00",
+            "20:00"
+          ]
+        ]
+      },
+      "hoursText": "街市約 06:00–20:00；個別熟食檔時間各異",
+      "openingNotes": "場內商戶、熟食檔及節日安排可能不同，本時間不代表每間商戶營業狀態。",
+      "services": [
+        "鮮活食品",
+        "蔬果及肉類",
+        "乾濕貨及日用品",
+        "熟食中心"
+      ],
+      "targetGroups": [
+        "公眾",
+        "家庭",
+        "長者"
+      ],
+      "fee": "free",
+      "feeNotes": "入場免費，購物價格由各商戶決定。",
+      "facilities": [
+        "多層街市",
+        "熟食中心"
+      ],
+      "transport": [
+        "近上水站及市中心商場",
+        "由多個行人入口進入；依現場指示"
+      ],
+      "tips": [
+        "個別商戶價格及營業時間不同，購買前請向檔戶查詢。"
+      ],
+      "story": {
+        "title": "義工推薦：石湖墟街市",
+        "text": "「有菜、海鮮、肉、熟食、生果、日用品、鮮花及勞保用品；樓上可到圖書館。」個別商戶時間及價格以現場為準。",
+        "source": "providedNotes"
+      },
+      "sources": [
+        "swhMarket",
+        "providedNotes",
+        "osm"
+      ],
+      "dataDate": "2026-10-29",
+      "completeness": "詳細收錄",
+      "sourceDetails": [
+        {
+          "title": "石湖墟街市及石湖墟市政大廈資料",
+          "publisher": "香港特別行政區政府",
+          "url": "https://www.info.gov.hk/gia/general/202412/09/P2024120900208.htm",
+          "type": "政府資料"
+        },
+        {
+          "title": "義工手寫介紹（項目提供）",
+          "publisher": "社區導航大使小組",
+          "url": null,
+          "type": "項目提供資料"
+        },
+        {
+          "title": "OpenStreetMap 地點及座標核對",
+          "publisher": "OpenStreetMap contributors",
+          "url": "https://www.openstreetmap.org/copyright",
+          "type": "開放地理資料"
+        }
+      ]
+    },
+    {
+      "id": "luen-wo-hui-market",
+      "name": "聯和墟街市",
+      "nameEn": "Luen Wo Hui Market",
+      "category": "daily",
+      "subcategories": [
+        "街市",
+        "熟食中心",
+        "屋邨商業設施"
+      ],
+      "operator": "食物環境衞生署",
+      "district": "粉嶺",
+      "subarea": "聯和墟",
+      "address": "新界粉嶺聯和墟和滿街 9 號",
+      "lat": 22.5000236,
+      "lng": 114.1444892,
+      "precision": "建築物級",
+      "summary": "多層公眾街市，設乾濕貨檔及熟食中心，是聯和墟居民日常採買的重要節點。",
+      "hours": {
+        "0": [
+          [
+            "06:00",
+            "20:00"
+          ]
+        ],
+        "1": [
+          [
+            "06:00",
+            "20:00"
+          ]
+        ],
+        "2": [
+          [
+            "06:00",
+            "20:00"
+          ]
+        ],
+        "3": [
+          [
+            "06:00",
+            "20:00"
+          ]
+        ],
+        "4": [
+          [
+            "06:00",
+            "20:00"
+          ]
+        ],
+        "5": [
+          [
+            "06:00",
+            "20:00"
+          ]
+        ],
+        "6": [
+          [
+            "06:00",
+            "20:00"
+          ]
+        ]
+      },
+      "hoursText": "街市約 06:00–20:00；熟食中心個別檔戶時間各異",
+      "openingNotes": "街市整體時間不可用作個別商戶的即時營業保證。",
+      "services": [
+        "新鮮食材",
+        "日用品",
+        "熟食中心"
+      ],
+      "targetGroups": [
+        "公眾",
+        "家庭",
+        "長者"
+      ],
+      "fee": "free",
+      "feeNotes": "入場免費；價格由各商戶決定。",
+      "facilities": [
+        "多層街市",
+        "熟食中心",
+        "連接鄰近屋苑的行人設施"
+      ],
+      "transport": [
+        "位於聯和墟和滿街，與粉嶺公共圖書館同址一帶"
+      ],
+      "tips": [
+        "個別商戶營業時間及價格不同。",
+        "可順道使用同址或鄰近的圖書館及青少年服務。"
+      ],
+      "sources": [
+        "lwhMarket",
+        "osm"
+      ],
+      "dataDate": "2026-10-29",
+      "completeness": "詳細收錄",
+      "sourceDetails": [
+        {
+          "title": "聯和墟街市",
+          "publisher": "香港特別行政區政府",
+          "url": "https://www.info.gov.hk/gia/general/200209/22/0920258.htm",
+          "type": "政府資料"
+        },
+        {
+          "title": "OpenStreetMap 地點及座標核對",
+          "publisher": "OpenStreetMap contributors",
+          "url": "https://www.openstreetmap.org/copyright",
+          "type": "開放地理資料"
+        }
+      ]
+    },
+    {
+      "id": "landmark-north",
+      "name": "上水廣場",
+      "nameEn": "Landmark North",
+      "category": "daily",
+      "subcategories": [
+        "商場及餐飲區",
+        "巴士及小巴設施"
+      ],
+      "operator": "私營商場",
+      "district": "上水",
+      "subarea": "上水市中心",
+      "address": "新界上水龍琛路 39 號",
+      "lat": 22.5025458,
+      "lng": 114.1278301,
+      "precision": "入口級",
+      "summary": "連接上水站市中心的大型商場，設餐飲、生活零售及多項社區服務。",
+      "hours": {
+        "0": [
+          [
+            "07:00",
+            "22:00"
+          ]
+        ],
+        "1": [
+          [
+            "07:00",
+            "22:00"
+          ]
+        ],
+        "2": [
+          [
+            "07:00",
+            "22:00"
+          ]
+        ],
+        "3": [
+          [
+            "07:00",
+            "22:00"
+          ]
+        ],
+        "4": [
+          [
+            "07:00",
+            "22:00"
+          ]
+        ],
+        "5": [
+          [
+            "07:00",
+            "22:00"
+          ]
+        ],
+        "6": [
+          [
+            "07:00",
+            "22:00"
+          ]
+        ]
+      },
+      "hoursText": "商場整體每日約 07:00–22:00",
+      "openingNotes": "商場整體開放時間與個別商戶不同；本資料不代表即時營業狀態。",
+      "website": "https://www.landmarknorth.com.hk/",
+      "services": [
+        "餐飲",
+        "生活零售",
+        "就業中心",
+        "婦女服務"
+      ],
+      "targetGroups": [
+        "公眾",
+        "家庭"
+      ],
+      "fee": "free",
+      "feeNotes": "入場免費；消費價格由商戶決定。",
+      "transport": [
+        "義工手記指出可由上水站 A4 出口直達；實際入口請依商場指示"
+      ],
+      "tips": [
+        "場內商戶營業時間各異，前往個別店舖前宜先確認。"
+      ],
+      "story": {
+        "title": "義工推薦：上水廣場",
+        "text": "「從上水站 A4 出口可直達；商場內有美妝、美食、服裝及珠寶等選擇。」實際店戶資料以商戶最新公布為準。",
+        "source": "providedNotes"
+      },
+      "sources": [
+        "landmark",
+        "providedNotes",
+        "osm"
+      ],
+      "dataDate": "2026-10-29",
+      "completeness": "詳細收錄",
+      "sourceDetails": [
+        {
+          "title": "上水廣場",
+          "publisher": "Landmark North",
+          "url": "https://www.landmarknorth.com.hk/",
+          "type": "場所官方網站"
+        },
+        {
+          "title": "義工手寫介紹（項目提供）",
+          "publisher": "社區導航大使小組",
+          "url": null,
+          "type": "項目提供資料"
+        },
+        {
+          "title": "OpenStreetMap 地點及座標核對",
+          "publisher": "OpenStreetMap contributors",
+          "url": "https://www.openstreetmap.org/copyright",
+          "type": "開放地理資料"
+        }
+      ]
+    },
+    {
+      "id": "sheung-shui-centre",
+      "name": "上水中心",
+      "nameEn": "Sheung Shui Centre",
+      "category": "daily",
+      "subcategories": [
+        "商場及餐飲區",
+        "巴士及小巴設施"
+      ],
+      "operator": "私營商場",
+      "district": "上水",
+      "subarea": "上水市中心",
+      "address": "新界上水智昌路一帶",
+      "lat": 22.5010027,
+      "lng": 114.1299499,
+      "precision": "建築物級",
+      "summary": "上水市中心商場及住宅基座，鄰近街市、圖書館與公共交通。",
+      "hours": {
+        "0": [
+          [
+            "07:00",
+            "22:00"
+          ]
+        ],
+        "1": [
+          [
+            "07:00",
+            "22:00"
+          ]
+        ],
+        "2": [
+          [
+            "07:00",
+            "22:00"
+          ]
+        ],
+        "3": [
+          [
+            "07:00",
+            "22:00"
+          ]
+        ],
+        "4": [
+          [
+            "07:00",
+            "22:00"
+          ]
+        ],
+        "5": [
+          [
+            "07:00",
+            "22:00"
+          ]
+        ],
+        "6": [
+          [
+            "07:00",
+            "22:00"
+          ]
+        ]
+      },
+      "hoursText": "商場整體每日約 07:00–22:00",
+      "openingNotes": "商場整體及個別商戶時間不同。",
+      "image": "assets/images/sheung-shui-centre.jpg",
+      "targetGroups": [
+        "公眾",
+        "家庭"
+      ],
+      "fee": "free",
+      "feeNotes": "入場免費；消費價格由商戶決定。",
+      "transport": [
+        "鄰近上水站及石湖墟一帶"
+      ],
+      "sources": [
+        "sheungShuiCentre",
+        "osm"
+      ],
+      "dataDate": "2026-10-29",
+      "completeness": "基本收錄",
+      "sourceDetails": [
+        {
+          "title": "上水中心位置資料",
+          "publisher": "OpenStreetMap contributors",
+          "url": "https://www.openstreetmap.org/",
+          "type": "開放地圖"
+        },
+        {
+          "title": "OpenStreetMap 地點及座標核對",
+          "publisher": "OpenStreetMap contributors",
+          "url": "https://www.openstreetmap.org/copyright",
+          "type": "開放地理資料"
+        }
+      ]
+    },
+    {
+      "id": "fanling-centre",
+      "name": "粉嶺中心",
+      "nameEn": "Fanling Centre",
+      "category": "daily",
+      "subcategories": [
+        "商場及餐飲區",
+        "巴士及小巴設施"
+      ],
+      "operator": "私營商場",
+      "district": "粉嶺",
+      "subarea": "粉嶺市中心",
+      "address": "新界粉嶺新運路 33 號",
+      "lat": 22.4905519,
+      "lng": 114.1413961,
+      "precision": "建築物級",
+      "summary": "粉嶺市中心商場及住宅基座，設餐飲與生活零售，並有照顧者中心。",
+      "hours": {
+        "0": [
+          [
+            "10:00",
+            "22:00"
+          ]
+        ],
+        "1": [
+          [
+            "10:00",
+            "22:00"
+          ]
+        ],
+        "2": [
+          [
+            "10:00",
+            "22:00"
+          ]
+        ],
+        "3": [
+          [
+            "10:00",
+            "22:00"
+          ]
+        ],
+        "4": [
+          [
+            "10:00",
+            "22:00"
+          ]
+        ],
+        "5": [
+          [
+            "10:00",
+            "22:00"
+          ]
+        ],
+        "6": [
+          [
+            "10:00",
+            "22:00"
+          ]
+        ]
+      },
+      "hoursText": "商場整體約 10:00–22:00（個別商戶各異）",
+      "openingNotes": "此時間只反映商場整體，不代表每間商戶或照顧者中心。",
+      "services": [
+        "餐飲",
+        "生活零售",
+        "照顧者支援"
+      ],
+      "targetGroups": [
+        "公眾",
+        "家庭",
+        "照顧者"
+      ],
+      "fee": "free",
+      "feeNotes": "入場免費；消費價格由商戶決定。",
+      "sources": [
+        "sheungShuiCentre",
+        "osm"
+      ],
+      "dataDate": "2026-10-29",
+      "completeness": "基本收錄",
+      "sourceDetails": [
+        {
+          "title": "上水中心位置資料",
+          "publisher": "OpenStreetMap contributors",
+          "url": "https://www.openstreetmap.org/",
+          "type": "開放地圖"
+        },
+        {
+          "title": "OpenStreetMap 地點及座標核對",
+          "publisher": "OpenStreetMap contributors",
+          "url": "https://www.openstreetmap.org/copyright",
+          "type": "開放地理資料"
+        }
+      ]
+    },
+    {
+      "id": "fanling-post-office",
+      "name": "粉嶺郵政局",
+      "nameEn": "Fanling Post Office",
+      "category": "daily",
+      "subcategories": [
+        "郵政及公共便民服務"
+      ],
+      "operator": "香港郵政",
+      "district": "粉嶺",
+      "subarea": "粉嶺市中心",
+      "address": "新界粉嶺璧峰路 3 號北區政府合署地下",
+      "lat": 22.4943923,
+      "lng": 114.1382958,
+      "precision": "入口級",
+      "summary": "提供郵寄、郵票、掛號及其他一般郵政服務。",
+      "phones": [
+        {
+          "label": "查詢",
+          "number": "2675 1689"
+        }
+      ],
+      "website": "https://www.hongkongpost.hk/tc/about_us/network/post_offices/index.html",
+      "hours": {
+        "0": [],
+        "1": [
+          [
+            "09:30",
+            "17:00"
+          ]
+        ],
+        "2": [
+          [
+            "09:30",
+            "17:00"
+          ]
+        ],
+        "3": [
+          [
+            "09:30",
+            "17:00"
+          ]
+        ],
+        "4": [
+          [
+            "09:30",
+            "17:00"
+          ]
+        ],
+        "5": [
+          [
+            "09:30",
+            "17:00"
+          ]
+        ],
+        "6": [
+          [
+            "09:30",
+            "13:00"
+          ]
+        ]
+      },
+      "hoursText": "星期一至五 09:30–17:00；星期六 09:30–13:00",
+      "openingNotes": "星期日及公眾假期休息；特別安排以香港郵政公告為準。",
+      "services": [
+        "一般郵政",
+        "郵票及掛號",
+        "郵件投寄"
+      ],
+      "targetGroups": [
+        "公眾"
+      ],
+      "fee": "paid",
+      "feeNotes": "按郵件種類及香港郵政現行收費。",
+      "sources": [
+        "postOffice",
+        "osm"
+      ],
+      "dataDate": "2026-10-29",
+      "completeness": "詳細收錄",
+      "sourceDetails": [
+        {
+          "title": "香港郵政：郵政局位置及服務時間",
+          "publisher": "香港郵政",
+          "url": "https://www.hongkongpost.hk/tc/about_us/network/post_offices/index.html",
+          "type": "政府服務名錄"
+        },
+        {
+          "title": "OpenStreetMap 地點及座標核對",
+          "publisher": "OpenStreetMap contributors",
+          "url": "https://www.openstreetmap.org/copyright",
+          "type": "開放地理資料"
+        }
+      ]
+    },
+    {
+      "id": "shek-wu-hui-post-office",
+      "name": "石湖墟郵政局",
+      "nameEn": "Shek Wu Hui Post Office",
+      "category": "daily",
+      "subcategories": [
+        "郵政及公共便民服務"
+      ],
+      "operator": "香港郵政",
+      "district": "上水",
+      "subarea": "石湖墟",
+      "address": "新界上水石湖墟新豐路 112–116 號",
+      "lat": 22.5038835,
+      "lng": 114.1265255,
+      "precision": "入口級",
+      "summary": "服務石湖墟一帶的郵政局，提供一般郵政及投寄服務。",
+      "phones": [
+        {
+          "label": "查詢",
+          "number": "2670 2282"
+        }
+      ],
+      "website": "https://www.hongkongpost.hk/tc/about_us/network/post_offices/index.html",
+      "hours": {
+        "0": [],
+        "1": [
+          [
+            "09:00",
+            "18:00"
+          ]
+        ],
+        "2": [
+          [
+            "09:00",
+            "18:00"
+          ]
+        ],
+        "3": [
+          [
+            "09:00",
+            "18:00"
+          ]
+        ],
+        "4": [
+          [
+            "09:00",
+            "18:00"
+          ]
+        ],
+        "5": [
+          [
+            "09:00",
+            "18:00"
+          ]
+        ],
+        "6": [
+          [
+            "09:00",
+            "13:00"
+          ]
+        ]
+      },
+      "hoursText": "星期一至五 09:00–18:00；星期六 09:00–13:00",
+      "openingNotes": "星期日及公眾假期休息；特別安排以香港郵政公告為準。",
+      "services": [
+        "一般郵政",
+        "郵票及掛號",
+        "郵件投寄"
+      ],
+      "targetGroups": [
+        "公眾"
+      ],
+      "fee": "paid",
+      "feeNotes": "按郵件種類及香港郵政現行收費。",
+      "sources": [
+        "postOffice",
+        "osm"
+      ],
+      "dataDate": "2026-10-29",
+      "completeness": "詳細收錄",
+      "sourceDetails": [
+        {
+          "title": "香港郵政：郵政局位置及服務時間",
+          "publisher": "香港郵政",
+          "url": "https://www.hongkongpost.hk/tc/about_us/network/post_offices/index.html",
+          "type": "政府服務名錄"
+        },
+        {
+          "title": "OpenStreetMap 地點及座標核對",
+          "publisher": "OpenStreetMap contributors",
+          "url": "https://www.openstreetmap.org/copyright",
+          "type": "開放地理資料"
+        }
+      ]
+    },
+    {
+      "id": "north-district-sports-ground",
+      "name": "北區運動場",
+      "nameEn": "North District Sports Ground",
+      "category": "daily",
+      "subcategories": [
+        "其他日常生活公共資源"
+      ],
+      "operator": "康樂及文化事務署",
+      "district": "上水",
+      "subarea": "石湖墟",
+      "address": "新界上水天平路 26 號",
+      "lat": 22.5063424,
+      "lng": 114.1299118,
+      "precision": "入口級",
+      "summary": "設有國際標準 8 線 400 米跑道、草地足球場、網球場、看台及無障礙設施。",
+      "phones": [
+        {
+          "label": "場地查詢",
+          "number": "2679 4913"
+        }
+      ],
+      "website": "https://www.lcsd.gov.hk/clpss/tc/webApp/Facility/Details.do?fid=309",
+      "hours": {
+        "0": [
+          [
+            "06:30",
+            "23:00"
+          ]
+        ],
+        "1": [
+          [
+            "06:30",
+            "23:00"
+          ]
+        ],
+        "2": [
+          [
+            "06:30",
+            "23:00"
+          ]
+        ],
+        "3": [
+          [
+            "06:30",
+            "23:00"
+          ]
+        ],
+        "4": [
+          [
+            "06:30",
+            "23:00"
+          ]
+        ],
+        "5": [
+          [
+            "06:30",
+            "23:00"
+          ]
+        ],
+        "6": [
+          [
+            "06:30",
+            "23:00"
+          ]
+        ]
+      },
+      "hoursText": "每日約 06:30–23:00；收費設施一般 08:30 起",
+      "openingNotes": "賽事、預訂、保養或天氣會影響開放，請以康文署當日時間表為準。",
+      "appointment": "部分設施需透過康體通或場地安排預訂。",
+      "services": [
+        "田徑跑道",
+        "草地足球場",
+        "網球場",
+        "緩步跑"
+      ],
+      "targetGroups": [
+        "公眾",
+        "青少年",
+        "長者",
+        "家庭"
+      ],
+      "fee": "low",
+      "feeNotes": "部分設施按康文署收費；緩步跑安排及收費以場地公佈為準。",
+      "facilities": [
+        "400 米跑道",
+        "草地足球場",
+        "網球場",
+        "更衣室及洗手間",
+        "飲水機",
+        "小食亭"
+      ],
+      "accessibility": [
+        "暢通易達洗手間",
+        "觸覺引路帶",
+        "視像火警警報",
+        "觸覺點字及平面圖"
+      ],
+      "transport": [
+        "位於天平路，鄰近龍琛路體育館",
+        "可乘巴士 70K、73K、77K、79K、270、277E 等路線一帶"
+      ],
+      "tips": [
+        "跑道及球場可能因賽事或保養暫停，出發前查看場地時間表。"
+      ],
+      "story": {
+        "title": "義工推薦：北區運動場",
+        "text": "「有標準 400 米八線跑道及天然足球場；晚上有照明，設更衣室、洗手間、飲水機及小食亭。」手記所列 07:00–23:00 仍以當日官方時間表為準。",
+        "source": "providedNotes"
+      },
+      "image": "assets/images/north-district-sports-ground-2.jpg",
+      "sources": [
+        "sportsGround",
+        "providedNotes",
+        "osm"
+      ],
+      "dataDate": "2026-10-29",
+      "completeness": "詳細收錄",
+      "sourceDetails": [
+        {
+          "title": "康樂及文化事務署：北區運動場",
+          "publisher": "康樂及文化事務署",
+          "url": "https://www.lcsd.gov.hk/clpss/tc/webApp/Facility/Details.do?fid=309",
+          "type": "政府場地頁"
+        },
+        {
+          "title": "義工手寫介紹（項目提供）",
+          "publisher": "社區導航大使小組",
+          "url": null,
+          "type": "項目提供資料"
+        },
+        {
+          "title": "OpenStreetMap 地點及座標核對",
+          "publisher": "OpenStreetMap contributors",
+          "url": "https://www.openstreetmap.org/copyright",
+          "type": "開放地理資料"
+        }
+      ]
+    },
+    {
+      "id": "po-wing-road-sports-centre",
+      "name": "保榮路體育館",
+      "nameEn": "Po Wing Road Sports Centre",
+      "category": "daily",
+      "subcategories": [
+        "其他日常生活公共資源"
+      ],
+      "operator": "康樂及文化事務署",
+      "district": "上水",
+      "subarea": "清河",
+      "address": "新界上水百和路 19 號",
+      "lat": 22.4969386,
+      "lng": 114.1284166,
+      "precision": "入口級",
+      "summary": "綜合室內體育館，設球類場地、健身設施及多用途活動空間。",
+      "phones": [
+        {
+          "label": "場地查詢",
+          "number": "2639 2979"
+        }
+      ],
+      "hours": {
+        "0": [
+          [
+            "07:00",
+            "23:00"
+          ]
+        ],
+        "1": [
+          [
+            "07:00",
+            "23:00"
+          ]
+        ],
+        "2": [
+          [
+            "07:00",
+            "23:00"
+          ]
+        ],
+        "3": [
+          [
+            "07:00",
+            "23:00"
+          ]
+        ],
+        "4": [
+          [
+            "07:00",
+            "23:00"
+          ]
+        ],
+        "5": [
+          [
+            "07:00",
+            "23:00"
+          ]
+        ],
+        "6": [
+          [
+            "07:00",
+            "23:00"
+          ]
+        ]
+      },
+      "hoursText": "義工手記記錄每日 07:00–23:00；保養日及個別設施時段另計",
+      "openingNotes": "球場、健身室及活動室的可用時段不同。",
+      "appointment": "球類場地及部分設施一般需預約。",
+      "services": [
+        "球類場地",
+        "健身室",
+        "室內運動空間"
+      ],
+      "targetGroups": [
+        "公眾",
+        "青少年",
+        "成人",
+        "長者"
+      ],
+      "fee": "low",
+      "feeNotes": "按康文署場地收費；租用時段及資格各異。",
+      "facilities": [
+        "健身室",
+        "室內緩跑空間",
+        "攀石設施",
+        "兒童遊戲室"
+      ],
+      "transport": [
+        "手記提示可由港鐵站出口前往；實際出口與步行方向請以站內指示為準"
+      ],
+      "tips": [
+        "使用健身室或攀石設施前，可能需符合康文署資格或參加入門簡介。"
+      ],
+      "story": {
+        "title": "義工推薦：保榮路體育館",
+        "text": "「綜合性體育館，各種球類需預約；設健身室、室內緩跑、攀石及兒童遊樂室。」設施使用規則以康文署最新安排為準。",
+        "source": "providedNotes"
+      },
+      "sources": [
+        "lcsdParks",
+        "providedNotes",
+        "osm"
+      ],
+      "dataDate": "2026-10-29",
+      "completeness": "詳細收錄",
+      "sourceDetails": [
+        {
+          "title": "康樂及文化事務署：康樂場地、公園及遊樂場",
+          "publisher": "康樂及文化事務署",
+          "url": "https://www.lcsd.gov.hk/tc/facilities/facilitieslist.html",
+          "type": "政府場地名錄"
+        },
+        {
+          "title": "義工手寫介紹（項目提供）",
+          "publisher": "社區導航大使小組",
+          "url": null,
+          "type": "項目提供資料"
+        },
+        {
+          "title": "OpenStreetMap 地點及座標核對",
+          "publisher": "OpenStreetMap contributors",
+          "url": "https://www.openstreetmap.org/copyright",
+          "type": "開放地理資料"
+        }
+      ]
+    },
+    {
+      "id": "tin-ping-sports-centre",
+      "name": "天平體育館",
+      "nameEn": "Tin Ping Sports Centre",
+      "category": "daily",
+      "subcategories": [
+        "其他日常生活公共資源"
+      ],
+      "operator": "康樂及文化事務署",
+      "district": "上水",
+      "subarea": "天平",
+      "address": "新界上水天平邨天平商場 3 樓",
+      "lat": 22.5032649,
+      "lng": 114.1336065,
+      "precision": "入口級",
+      "summary": "位於天平商場的室內體育館，提供多用途球場及康體活動空間。",
+      "phones": [
+        {
+          "label": "場地查詢",
+          "number": "2673 3699"
+        }
+      ],
+      "hours": {
+        "0": [
+          [
+            "07:00",
+            "23:00"
+          ]
+        ],
+        "1": [
+          [
+            "07:00",
+            "23:00"
+          ]
+        ],
+        "2": [
+          [
+            "07:00",
+            "23:00"
+          ]
+        ],
+        "3": [
+          [
+            "07:00",
+            "23:00"
+          ]
+        ],
+        "4": [
+          [
+            "07:00",
+            "23:00"
+          ]
+        ],
+        "5": [
+          [
+            "07:00",
+            "23:00"
+          ]
+        ],
+        "6": [
+          [
+            "07:00",
+            "23:00"
+          ]
+        ]
+      },
+      "hoursText": "每日約 07:00–23:00；設施按預訂時段使用",
+      "openingNotes": "球場、乒乓球室及活動室按租用時段開放；保養日及活動安排可能調整。",
+      "appointment": "場地一般需預約；個別活動及設施安排請先查詢。",
+      "services": [
+        "多用途球場",
+        "康體活動"
+      ],
+      "targetGroups": [
+        "公眾",
+        "青少年",
+        "成人",
+        "長者"
+      ],
+      "fee": "low",
+      "feeNotes": "按康文署現行場地收費。",
+      "transport": [
+        "位於天平邨商場內，可由馬會道及天平路一帶前往"
+      ],
+      "sources": [
+        "lcsdParks",
+        "providedBooklet",
+        "osm"
+      ],
+      "dataDate": "2026-10-29",
+      "completeness": "基本收錄",
+      "sourceDetails": [
+        {
+          "title": "康樂及文化事務署：康樂場地、公園及遊樂場",
+          "publisher": "康樂及文化事務署",
+          "url": "https://www.lcsd.gov.hk/tc/facilities/facilitieslist.html",
+          "type": "政府場地名錄"
+        },
+        {
+          "title": "新港北區通：社區地圖小冊子",
+          "publisher": "香港婦女中心協會慧思薈（上水）",
+          "url": null,
+          "type": "項目提供資料"
+        },
+        {
+          "title": "OpenStreetMap 地點及座標核對",
+          "publisher": "OpenStreetMap contributors",
+          "url": "https://www.openstreetmap.org/copyright",
+          "type": "開放地理資料"
+        }
+      ]
+    },
+    {
+      "id": "lung-sum-avenue-sports-centre",
+      "name": "龍琛路體育館",
+      "nameEn": "Lung Sum Avenue Sports Centre",
+      "category": "daily",
+      "subcategories": [
+        "其他日常生活公共資源"
+      ],
+      "operator": "康樂及文化事務署",
+      "district": "上水",
+      "subarea": "石湖墟",
+      "address": "新界上水龍琛路 155 號",
+      "lat": 22.5048984,
+      "lng": 114.1308137,
+      "precision": "入口級",
+      "summary": "上水市區的室內體育館，提供多用途球場及康體設施。",
+      "phones": [
+        {
+          "label": "場地查詢",
+          "number": "2673 4433"
+        }
+      ],
+      "hours": {
+        "0": [
+          [
+            "07:00",
+            "23:00"
+          ]
+        ],
+        "1": [
+          [
+            "07:00",
+            "23:00"
+          ]
+        ],
+        "2": [
+          [
+            "07:00",
+            "23:00"
+          ]
+        ],
+        "3": [
+          [
+            "07:00",
+            "23:00"
+          ]
+        ],
+        "4": [
+          [
+            "07:00",
+            "23:00"
+          ]
+        ],
+        "5": [
+          [
+            "07:00",
+            "23:00"
+          ]
+        ],
+        "6": [
+          [
+            "07:00",
+            "23:00"
+          ]
+        ]
+      },
+      "hoursText": "每日約 07:00–23:00；設施按預訂時段使用",
+      "openingNotes": "主場、壁球場及健身設施時段不同；保養日及活動安排可能調整。",
+      "appointment": "場地一般需按康體通或場地安排預約。",
+      "services": [
+        "多用途球場",
+        "康體活動"
+      ],
+      "targetGroups": [
+        "公眾",
+        "青少年",
+        "成人",
+        "長者"
+      ],
+      "fee": "low",
+      "feeNotes": "按康文署現行場地收費。",
+      "transport": [
+        "位於上水馬會道，近北區運動場一帶"
+      ],
+      "sources": [
+        "lcsdParks",
+        "providedBooklet",
+        "osm"
+      ],
+      "dataDate": "2026-10-29",
+      "completeness": "基本收錄",
+      "sourceDetails": [
+        {
+          "title": "康樂及文化事務署：康樂場地、公園及遊樂場",
+          "publisher": "康樂及文化事務署",
+          "url": "https://www.lcsd.gov.hk/tc/facilities/facilitieslist.html",
+          "type": "政府場地名錄"
+        },
+        {
+          "title": "新港北區通：社區地圖小冊子",
+          "publisher": "香港婦女中心協會慧思薈（上水）",
+          "url": null,
+          "type": "項目提供資料"
+        },
+        {
+          "title": "OpenStreetMap 地點及座標核對",
+          "publisher": "OpenStreetMap contributors",
+          "url": "https://www.openstreetmap.org/copyright",
+          "type": "開放地理資料"
+        }
+      ]
+    },
+    {
+      "id": "luen-wo-hui-sports-centre",
+      "name": "聯和墟體育館",
+      "nameEn": "Luen Wo Hui Sports Centre",
+      "category": "daily",
+      "subcategories": [
+        "其他日常生活公共資源"
+      ],
+      "operator": "康樂及文化事務署",
+      "district": "粉嶺",
+      "subarea": "聯和墟",
+      "address": "新界粉嶺聯和墟和滿街 9 號 3 樓",
+      "lat": 22.5001935,
+      "lng": 114.1448913,
+      "precision": "入口級",
+      "summary": "位於聯和墟街市及圖書館一帶的室內體育館，方便購物行程後使用康體設施。",
+      "phones": [
+        {
+          "label": "場地查詢",
+          "number": "2677 5149"
+        }
+      ],
+      "hours": {
+        "0": [
+          [
+            "07:00",
+            "23:00"
+          ]
+        ],
+        "1": [
+          [
+            "07:00",
+            "23:00"
+          ]
+        ],
+        "2": [
+          [
+            "07:00",
+            "23:00"
+          ]
+        ],
+        "3": [
+          [
+            "07:00",
+            "23:00"
+          ]
+        ],
+        "4": [
+          [
+            "07:00",
+            "23:00"
+          ]
+        ],
+        "5": [
+          [
+            "07:00",
+            "23:00"
+          ]
+        ],
+        "6": [
+          [
+            "07:00",
+            "23:00"
+          ]
+        ]
+      },
+      "hoursText": "每日約 07:00–23:00；設施按預訂時段使用",
+      "openingNotes": "主場、兒童遊戲室及活動設施時段不同；保養日及活動安排可能調整。",
+      "appointment": "場地一般需預約。",
+      "services": [
+        "多用途球場",
+        "康體活動"
+      ],
+      "targetGroups": [
+        "公眾",
+        "青少年",
+        "成人",
+        "長者"
+      ],
+      "fee": "low",
+      "feeNotes": "按康文署現行場地收費。",
+      "transport": [
+        "聯和墟街市及公共圖書館上層，依場地入口指示"
+      ],
+      "sources": [
+        "lcsdParks",
+        "providedBooklet",
+        "osm"
+      ],
+      "dataDate": "2026-10-29",
+      "completeness": "基本收錄",
+      "sourceDetails": [
+        {
+          "title": "康樂及文化事務署：康樂場地、公園及遊樂場",
+          "publisher": "康樂及文化事務署",
+          "url": "https://www.lcsd.gov.hk/tc/facilities/facilitieslist.html",
+          "type": "政府場地名錄"
+        },
+        {
+          "title": "新港北區通：社區地圖小冊子",
+          "publisher": "香港婦女中心協會慧思薈（上水）",
+          "url": null,
+          "type": "項目提供資料"
+        },
+        {
+          "title": "OpenStreetMap 地點及座標核對",
+          "publisher": "OpenStreetMap contributors",
+          "url": "https://www.openstreetmap.org/copyright",
+          "type": "開放地理資料"
+        }
+      ]
+    },
+    {
+      "id": "sheung-shui-swimming-pool",
+      "name": "上水游泳池",
+      "nameEn": "Sheung Shui Swimming Pool",
+      "category": "daily",
+      "subcategories": [
+        "其他日常生活公共資源"
+      ],
+      "operator": "康樂及文化事務署",
+      "district": "上水",
+      "subarea": "石湖墟",
+      "address": "新界上水天平路 38 號",
+      "lat": 22.5059066,
+      "lng": 114.1314354,
+      "precision": "場地級",
+      "summary": "公眾游泳池，開放時段受季節、每周大清潔日及場地安排影響。",
+      "phones": [
+        {
+          "label": "場地查詢",
+          "number": "2679 4844"
+        }
+      ],
+      "hours": {
+        "0": [
+          [
+            "06:30",
+            "12:00"
+          ],
+          [
+            "13:00",
+            "18:00"
+          ],
+          [
+            "19:00",
+            "22:00"
+          ]
+        ],
+        "1": [
+          [
+            "06:30",
+            "12:00"
+          ],
+          [
+            "13:00",
+            "18:00"
+          ],
+          [
+            "19:00",
+            "22:00"
+          ]
+        ],
+        "2": [
+          [
+            "06:30",
+            "12:00"
+          ],
+          [
+            "13:00",
+            "18:00"
+          ],
+          [
+            "19:00",
+            "22:00"
+          ]
+        ],
+        "3": [
+          [
+            "06:30",
+            "12:00"
+          ],
+          [
+            "13:00",
+            "18:00"
+          ],
+          [
+            "19:00",
+            "22:00"
+          ]
+        ],
+        "4": [
+          [
+            "06:30",
+            "12:00"
+          ],
+          [
+            "13:00",
+            "18:00"
+          ],
+          [
+            "19:00",
+            "22:00"
+          ]
+        ],
+        "5": [
+          [
+            "06:30",
+            "12:00"
+          ],
+          [
+            "13:00",
+            "18:00"
+          ],
+          [
+            "19:00",
+            "22:00"
+          ]
+        ],
+        "6": [
+          [
+            "06:30",
+            "12:00"
+          ],
+          [
+            "13:00",
+            "18:00"
+          ],
+          [
+            "19:00",
+            "22:00"
+          ]
+        ]
+      },
+      "hoursText": "夏季每日 06:30–12:00、13:00–18:00、19:00–22:00",
+      "openingNotes": "每年 11 月 1 日至翌年 3 月 31 日暫停開放；逢星期四大清潔（假期順延），第三節重開。",
+      "appointment": "一般按入場安排，團體或訓練使用需另查。",
+      "services": [
+        "公眾泳池",
+        "游泳設施"
+      ],
+      "targetGroups": [
+        "公眾",
+        "家庭",
+        "青少年",
+        "長者"
+      ],
+      "fee": "low",
+      "feeNotes": "按康文署公眾游泳池收費。",
+      "accessibility": [
+        "具體無障礙設施及上落安排請向場地查詢"
+      ],
+      "transport": [
+        "位於上水天平路一帶，近北區運動場及龍琛路體育館"
+      ],
+      "tips": [
+        "出發前應查看當日開放時段、大清潔日及天氣安排。"
+      ],
+      "sources": [
+        "lcsdParks",
+        "osm"
+      ],
+      "dataDate": "2026-10-29",
+      "completeness": "基本收錄",
+      "sourceDetails": [
+        {
+          "title": "康樂及文化事務署：康樂場地、公園及遊樂場",
+          "publisher": "康樂及文化事務署",
+          "url": "https://www.lcsd.gov.hk/tc/facilities/facilitieslist.html",
+          "type": "政府場地名錄"
+        },
+        {
+          "title": "OpenStreetMap 地點及座標核對",
+          "publisher": "OpenStreetMap contributors",
+          "url": "https://www.openstreetmap.org/copyright",
+          "type": "開放地理資料"
+        }
+      ]
+    },
+    {
+      "id": "fanling-swimming-pool",
+      "name": "粉嶺游泳池",
+      "nameEn": "Fanling Swimming Pool",
+      "category": "daily",
+      "subcategories": [
+        "其他日常生活公共資源"
+      ],
+      "operator": "康樂及文化事務署",
+      "district": "粉嶺",
+      "subarea": "粉嶺市中心",
+      "address": "新界粉嶺新運路 73 號",
+      "lat": 22.4948265,
+      "lng": 114.1360016,
+      "precision": "入口級",
+      "summary": "公眾游泳池，設季節性開放及每周大清潔安排。",
+      "phones": [
+        {
+          "label": "場地查詢",
+          "number": "2675 6951"
+        }
+      ],
+      "hours": {
+        "0": [
+          [
+            "06:30",
+            "12:00"
+          ],
+          [
+            "13:00",
+            "18:00"
+          ],
+          [
+            "19:00",
+            "22:00"
+          ]
+        ],
+        "1": [
+          [
+            "06:30",
+            "12:00"
+          ],
+          [
+            "13:00",
+            "18:00"
+          ],
+          [
+            "19:00",
+            "22:00"
+          ]
+        ],
+        "2": [
+          [
+            "06:30",
+            "12:00"
+          ],
+          [
+            "13:00",
+            "18:00"
+          ],
+          [
+            "19:00",
+            "22:00"
+          ]
+        ],
+        "3": [
+          [
+            "06:30",
+            "12:00"
+          ],
+          [
+            "13:00",
+            "18:00"
+          ],
+          [
+            "19:00",
+            "22:00"
+          ]
+        ],
+        "4": [
+          [
+            "06:30",
+            "12:00"
+          ],
+          [
+            "13:00",
+            "18:00"
+          ],
+          [
+            "19:00",
+            "22:00"
+          ]
+        ],
+        "5": [
+          [
+            "06:30",
+            "12:00"
+          ],
+          [
+            "13:00",
+            "18:00"
+          ],
+          [
+            "19:00",
+            "22:00"
+          ]
+        ],
+        "6": [
+          [
+            "06:30",
+            "12:00"
+          ],
+          [
+            "13:00",
+            "18:00"
+          ],
+          [
+            "19:00",
+            "22:00"
+          ]
+        ]
+      },
+      "hoursText": "每日 06:30–12:00、13:00–18:00、19:00–22:00",
+      "openingNotes": "主池冬季提供暖水；其他池 11 月 1 日至翌年 4 月 15 日暫停。逢星期二大清潔，第三節重開。",
+      "appointment": "一般按即場入場安排；訓練及團體使用另查。",
+      "services": [
+        "公眾泳池",
+        "游泳設施"
+      ],
+      "targetGroups": [
+        "公眾",
+        "家庭",
+        "青少年",
+        "長者"
+      ],
+      "fee": "low",
+      "feeNotes": "按康文署公眾游泳池收費。",
+      "transport": [
+        "位於粉嶺新運路，近粉嶺市中心"
+      ],
+      "tips": [
+        "每年季節及每周大清潔日可能影響開放，出發前先查閱康文署。",
+        "冬季暖水池安排以場地公告為準。"
+      ],
+      "sources": [
+        "lcsdParks",
+        "osm"
+      ],
+      "dataDate": "2026-10-29",
+      "completeness": "詳細收錄",
+      "sourceDetails": [
+        {
+          "title": "康樂及文化事務署：康樂場地、公園及遊樂場",
+          "publisher": "康樂及文化事務署",
+          "url": "https://www.lcsd.gov.hk/tc/facilities/facilitieslist.html",
+          "type": "政府場地名錄"
+        },
+        {
+          "title": "OpenStreetMap 地點及座標核對",
+          "publisher": "OpenStreetMap contributors",
+          "url": "https://www.openstreetmap.org/copyright",
+          "type": "開放地理資料"
+        }
+      ]
+    },
+    {
+      "id": "green-sheung-shui",
+      "name": "綠在石湖墟",
+      "nameEn": "GREEN@SHEK WU HUI",
+      "category": "daily",
+      "subcategories": [
+        "回收設施",
+        "其他日常生活公共資源"
+      ],
+      "operator": "社區回收網絡營運機構",
+      "district": "上水",
+      "subarea": "石湖墟",
+      "address": "新界上水龍琛路 80 號",
+      "lat": 22.5031463,
+      "lng": 114.1275501,
+      "precision": "場地級",
+      "summary": "社區回收便利點，接收多類可回收物及推廣減廢教育。",
+      "phones": [
+        {
+          "label": "查詢",
+          "number": "2464 8003"
+        }
+      ],
+      "hours": {
+        "0": [
+          [
+            "08:00",
+            "21:00"
+          ]
+        ],
+        "1": [
+          [
+            "08:00",
+            "21:00"
+          ]
+        ],
+        "2": [
+          [
+            "08:00",
+            "21:00"
+          ]
+        ],
+        "3": [
+          [
+            "08:00",
+            "21:00"
+          ]
+        ],
+        "4": [
+          [
+            "08:00",
+            "21:00"
+          ]
+        ],
+        "5": [
+          [
+            "08:00",
+            "21:00"
+          ]
+        ],
+        "6": [
+          [
+            "08:00",
+            "21:00"
+          ]
+        ]
+      },
+      "hoursText": "每日約 08:00–21:00",
+      "openingNotes": "節日、天氣或場地安排可能調整。",
+      "services": [
+        "社區回收",
+        "減廢教育"
+      ],
+      "targetGroups": [
+        "公眾"
+      ],
+      "fee": "free",
+      "feeNotes": "一般回收服務免費。",
+      "sources": [
+        "greenSWH",
+        "osm"
+      ],
+      "dataDate": "2026-10-29",
+      "completeness": "基本收錄",
+      "sourceDetails": [
+        {
+          "title": "綠在石湖墟",
+          "publisher": "環境保護署社區回收網絡",
+          "url": "https://www.wastereduction.gov.hk/zh-hk/waste-reduction-programme/green-at-community/greenshekwuhui",
+          "type": "政府服務頁"
+        },
+        {
+          "title": "OpenStreetMap 地點及座標核對",
+          "publisher": "OpenStreetMap contributors",
+          "url": "https://www.openstreetmap.org/copyright",
+          "type": "開放地理資料"
+        }
+      ]
+    },
+    {
+      "id": "green-luen-wo-hui",
+      "name": "綠在聯和墟",
+      "nameEn": "GREEN@LUEN WO HUI",
+      "category": "daily",
+      "subcategories": [
+        "回收設施",
+        "其他日常生活公共資源"
+      ],
+      "operator": "弘毅環保教育發展基金有限公司",
+      "district": "粉嶺",
+      "subarea": "聯和墟",
+      "address": "新界粉嶺聯和墟和滿街 9 號聯和墟街市地下 P11–P14 號舖",
+      "lat": 22.5000236,
+      "lng": 114.1444892,
+      "precision": "入口級",
+      "summary": "設於聯和墟街市的社區回收便利點，接收金屬、紙、塑膠、玻璃及小型電器等。",
+      "phones": [
+        {
+          "label": "電話",
+          "number": "2668 6606"
+        },
+        {
+          "label": "WhatsApp",
+          "number": "9223 6667"
+        }
+      ],
+      "email": "luenwohui@6green.hk",
+      "hours": {
+        "0": [
+          [
+            "07:00",
+            "20:00"
+          ]
+        ],
+        "1": [
+          [
+            "07:00",
+            "20:00"
+          ]
+        ],
+        "2": [
+          [
+            "07:00",
+            "20:00"
+          ]
+        ],
+        "3": [
+          [
+            "07:00",
+            "20:00"
+          ]
+        ],
+        "4": [
+          [
+            "07:00",
+            "20:00"
+          ]
+        ],
+        "5": [
+          [
+            "07:00",
+            "20:00"
+          ]
+        ],
+        "6": [
+          [
+            "07:00",
+            "20:00"
+          ]
+        ]
+      },
+      "hoursText": "每日約 07:00–20:00",
+      "openingNotes": "自助時段約 07:00–10:00 及 17:00–20:00；節日及天氣安排另有調整。",
+      "services": [
+        "社區回收",
+        "自助回收",
+        "減廢教育"
+      ],
+      "targetGroups": [
+        "公眾"
+      ],
+      "fee": "free",
+      "feeNotes": "一般回收服務免費。",
+      "sources": [
+        "greenFL",
+        "osm"
+      ],
+      "dataDate": "2026-10-29",
+      "completeness": "詳細收錄",
+      "sourceDetails": [
+        {
+          "title": "綠在聯和墟",
+          "publisher": "環境保護署社區回收網絡",
+          "url": "https://www.wastereduction.gov.hk/zh-hk/waste-reduction-programme/green-at-community/greenluen-wo-hui",
+          "type": "政府服務頁"
+        },
+        {
+          "title": "OpenStreetMap 地點及座標核對",
+          "publisher": "OpenStreetMap contributors",
+          "url": "https://www.openstreetmap.org/copyright",
+          "type": "開放地理資料"
+        }
+      ]
+    }
+  ]
+}

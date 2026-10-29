@@ -1,0 +1,667 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f4efe4">
+  <meta name="description" content="北區及古洞社區資源地圖：搜尋上水、粉嶺及古洞的喘息空間、社區支援與衣食住行地點，查看位置、服務、開放時間及資料來源。">
+  <meta property="og:title" content="北區，一齊行｜北區・古洞社區資源地圖">
+  <meta property="og:description" content="搜尋上水、粉嶺及古洞的社區資源、公共交通、開放時間及位置。">
+  <meta property="og:type" content="website">
+  <meta name="robots" content="index, follow">
+  <title>北區，一齊行｜北區・古洞社區資源地圖</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23236248'/%3E%3Cpath d='M11 43h42M18 43V25l14-9 14 9v18M26 43V32h12v11' fill='none' stroke='%23f4efe4' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://tile.openstreetmap.de">
+  <link rel="stylesheet" href="assets/vendor/leaflet.css">
+  <link rel="stylesheet" href="assets/vendor/MarkerCluster.css">
+  <link rel="stylesheet" href="assets/vendor/MarkerCluster.Default.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#resource-map">跳到地圖及地點列表</a>
+
+  <svg class="svg-sprite" aria-hidden="true">
+    <symbol id="icon-search" viewBox="0 0 24 24">
+      <circle cx="10.7" cy="10.7" r="6.7"></circle><path d="m16 16 5 5"></path>
+    </symbol>
+    <symbol id="icon-pin" viewBox="0 0 24 24">
+      <path d="M20 10c0 5.2-8 12-8 12S4 15.2 4 10a8 8 0 1 1 16 0Z"></path><circle cx="12" cy="10" r="2.5"></circle>
+    </symbol>
+    <symbol id="icon-filter" viewBox="0 0 24 24">
+      <path d="M4 6h16M7 12h10M10 18h4"></path>
+    </symbol>
+    <symbol id="icon-close" viewBox="0 0 24 24">
+      <path d="m5 5 14 14M19 5 5 19"></path>
+    </symbol>
+    <symbol id="icon-arrow" viewBox="0 0 24 24">
+      <path d="M5 12h14M14 7l5 5-5 5"></path>
+    </symbol>
+    <symbol id="icon-phone" viewBox="0 0 24 24">
+      <path d="M8.1 3.5 5.5 4.7c-1.1.5-1.8 1.7-1.5 3 1.3 7.2 6.9 12.8 14.1 14.1 1.3.2 2.5-.5 3-1.6l1.2-2.6-5.1-2.3-1.3 2.6a15 15 0 0 1-8.3-8.3L10.2 9 8.1 3.5Z"></path>
+    </symbol>
+    <symbol id="icon-route" viewBox="0 0 24 24">
+      <circle cx="6" cy="18" r="3"></circle><circle cx="18" cy="6" r="3"></circle><path d="M9 18h3c3.3 0 6-2.7 6-6V9"></path>
+    </symbol>
+    <symbol id="icon-link" viewBox="0 0 24 24">
+      <path d="M10 13a5 5 0 0 0 7.1 0l2-2a5 5 0 0 0-7.1-7.1l-1.1 1.1"></path><path d="M14 11a5 5 0 0 0-7.1 0l-2 2A5 5 0 0 0 12 20.1l1.1-1.1"></path>
+    </symbol>
+    <symbol id="icon-list" viewBox="0 0 24 24">
+      <path d="M8 6h12M8 12h12M8 18h12"></path><circle cx="4" cy="6" r=".8"></circle><circle cx="4" cy="12" r=".8"></circle><circle cx="4" cy="18" r=".8"></circle>
+    </symbol>
+    <symbol id="icon-map" viewBox="0 0 24 24">
+      <path d="m3 6 6-3 6 3 6-3v15l-6 3-6-3-6 3V6Z"></path><path d="M9 3v15M15 6v15"></path>
+    </symbol>
+    <symbol id="icon-leaf" viewBox="0 0 24 24">
+      <path d="M20 4C11 4 5 7.3 5 14c0 2.5 1.7 4.8 4.5 5.5C15 20.8 20 14.7 20 4Z"></path><path d="M4 21c2.8-5.4 6-8.5 11-11"></path>
+    </symbol>
+    <symbol id="icon-hands" viewBox="0 0 24 24">
+      <path d="M8.5 12V6.5a1.5 1.5 0 0 1 3 0V11"></path><path d="M11.5 10V5.5a1.5 1.5 0 0 1 3 0V11"></path><path d="M14.5 10V7a1.5 1.5 0 0 1 3 0v6.5c0 4.1-2.6 7.5-7 7.5-3 0-4.3-1.3-6.2-3.5L2 15.2a1.7 1.7 0 0 1 2.4-2.4L7 15"></path>
+    </symbol>
+    <symbol id="icon-shop" viewBox="0 0 24 24">
+      <path d="M4 9h16l-1-5H5L4 9Z"></path><path d="M5 9v11h14V9M9 20v-6h6v6"></path>
+    </symbol>
+    <symbol id="icon-info" viewBox="0 0 24 24">
+      <circle cx="12" cy="12" r="9"></circle><path d="M12 11v6M12 7h.01"></path>
+    </symbol>
+    <symbol id="icon-emergency" viewBox="0 0 24 24">
+      <path d="M9 3h6v6h6v6h-6v6H9v-6H3V9h6V3Z"></path>
+    </symbol>
+    <symbol id="icon-heart" viewBox="0 0 24 24">
+      <path d="M20.8 5.8a5.5 5.5 0 0 0-7.8 0L12 6.9l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 22l8.8-8.4a5.5 5.5 0 0 0 0-7.8Z"></path><path d="M3.5 12h4l1.5-3 3 6 2-4h6.5"></path>
+    </symbol>
+    <symbol id="icon-people" viewBox="0 0 24 24">
+      <circle cx="9" cy="8" r="3"></circle><path d="M3 20v-2a6 6 0 0 1 12 0v2M16 5.5a3 3 0 0 1 0 5.8M17 14a5 5 0 0 1 4 5v1"></path>
+    </symbol>
+    <symbol id="icon-lifebuoy" viewBox="0 0 24 24">
+      <circle cx="12" cy="12" r="9"></circle><circle cx="12" cy="12" r="4"></circle><path d="m5.6 5.6 3.8 3.8m5.2 5.2 3.8 3.8m0-12.8-3.8 3.8m-5.2 5.2-3.8 3.8"></path>
+    </symbol>
+    <symbol id="icon-hospital" viewBox="0 0 24 24">
+      <path d="M4 21V8l8-5 8 5v13M9 21v-7h6v7M8 10h2M14 10h2M12 8v4"></path>
+    </symbol>
+    <symbol id="icon-globe" viewBox="0 0 24 24">
+      <circle cx="12" cy="12" r="9"></circle><path d="M3 12h18M12 3c3 3.2 3 14.8 0 18M12 3c-3 3.2-3 14.8 0 18"></path>
+    </symbol>
+    <symbol id="icon-clock" viewBox="0 0 24 24">
+      <circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path>
+    </symbol>
+    <symbol id="icon-expand" viewBox="0 0 24 24">
+      <path d="M8 3H3v5M16 3h5v5M8 21H3v-5M16 21h5v-5"></path>
+    </symbol>
+    <symbol id="icon-arrow-left" viewBox="0 0 24 24">
+      <path d="M19 12H5M10 7l-5 5 5 5"></path>
+    </symbol>
+    <symbol id="icon-arrow-right" viewBox="0 0 24 24">
+      <path d="M5 12h14M14 7l5 5-5 5"></path>
+    </symbol>
+    <symbol id="icon-chevron" viewBox="0 0 24 24">
+      <path d="m8 10 4 4 4-4"></path>
+    </symbol>
+  </svg>
+
+  <header class="site-header">
+    <a href="#top" class="brand" aria-label="返回頁首">
+      <span class="brand-mark" aria-hidden="true">
+        <span></span><span></span><span></span>
+      </span>
+      <span>
+        <strong>北區，一齊行</strong>
+        <small>北區・古洞社區資源地圖</small>
+      </span>
+    </a>
+    <nav class="desktop-nav" aria-label="主要導覽">
+      <a href="#resource-map">找資源</a>
+      <a href="#transport-guide">交通指引</a>
+      <a href="#volunteer-notes">義工的話</a>
+      <a href="#about-map">地圖介紹</a>
+    </nav>
+    <button class="date-button" type="button" data-open-about>
+      <span class="status-dot" aria-hidden="true"></span>
+      固定版本 · 2026.10.29
+    </button>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span>社區導航大使</span> 共同整理</p>
+        <h1 id="hero-title">在北區，<br><em>找到下一站。</em></h1>
+        <p class="hero-intro">公園、家庭支援、圖書館、街市與交通，一圖找到位置、時間及聯絡方法。</p>
+        <form class="hero-search" id="heroSearch" role="search">
+          <label for="heroSearchInput">你想找甚麼？</label>
+          <div class="hero-search-row">
+            <svg aria-hidden="true"><use href="#icon-search"></use></svg>
+            <input id="heroSearchInput" type="search" autocomplete="off" placeholder="例如：新來港、圖書館、街市、免費">
+            <button type="submit" aria-label="在地圖中搜尋">
+              找一找
+              <svg aria-hidden="true"><use href="#icon-arrow"></use></svg>
+            </button>
+          </div>
+        </form>
+        <div class="hero-actions" aria-label="快速分類">
+          <a href="#resource-map" data-quick-theme="breathe"><i class="quick-dot breathe"></i>喘息空間</a>
+          <a href="#resource-map" data-quick-theme="support"><i class="quick-dot support"></i>社區支援</a>
+          <a href="#resource-map" data-quick-theme="daily"><i class="quick-dot daily"></i>衣食住行</a>
+        </div>
+      </div>
+      <figure class="hero-visual">
+        <img src="assets/images/hero-community-map.jpg" alt="暖色手繪社區拼貼：東鐵列車穿過上水、粉嶺與古洞一帶，長者與小孩坐在公園看社區地圖。">
+        <figcaption>
+          <span>社區導航大使共創</span>
+          4 節小組 × 2 次實地社區探索
+        </figcaption>
+        <div class="hero-tape" aria-hidden="true"></div>
+      </figure>
+    </section>
+
+    <section class="resource-app" id="resource-map" aria-labelledby="map-title">
+      <div class="discovery-bar">
+        <div class="map-heading">
+          <p class="section-kicker">社區地圖</p>
+          <h2 id="map-title">找地方</h2>
+        </div>
+        <form class="app-search" id="appSearch" role="search">
+          <label class="visually-hidden" for="mainSearch">搜尋地點、地址或服務</label>
+          <svg aria-hidden="true"><use href="#icon-search"></use></svg>
+          <input id="mainSearch" type="search" autocomplete="off" placeholder="搜尋名稱、服務或地址">
+          <button class="clear-search" type="button" id="clearSearch" aria-label="清除搜尋" hidden>
+            <svg aria-hidden="true"><use href="#icon-close"></use></svg>
+          </button>
+        </form>
+        <div class="discovery-actions">
+          <button class="filter-button" type="button" id="openFilters">
+            <svg aria-hidden="true"><use href="#icon-filter"></use></svg>
+            篩選
+            <span class="filter-count" id="filterCount" hidden>0</span>
+          </button>
+          <button class="outline-button" type="button" id="resetMap">
+            <svg aria-hidden="true"><use href="#icon-pin"></use></svg>
+            返回全區
+          </button>
+        </div>
+      </div>
+
+      <div class="theme-strip" aria-label="按需要篩選">
+        <button class="theme-chip is-active" type="button" data-theme="all" aria-pressed="true">
+          <span class="need-icon"><svg aria-hidden="true"><use href="#icon-pin"></use></svg></span>
+          <span><strong>全部</strong><small><b data-theme-count="all">45</b> 個地點</small></span>
+        </button>
+        <button class="theme-chip" type="button" data-theme="breathe" aria-pressed="false">
+          <span class="need-icon breathe"><svg aria-hidden="true"><use href="#icon-leaf"></use></svg></span>
+          <span><strong>喘息空間</strong><small><b data-theme-count="breathe">8</b> 個地點</small></span>
+        </button>
+        <button class="theme-chip" type="button" data-theme="support" aria-pressed="false">
+          <span class="need-icon support"><svg aria-hidden="true"><use href="#icon-hands"></use></svg></span>
+          <span><strong>社區支援</strong><small><b data-theme-count="support">17</b> 個地點</small></span>
+        </button>
+        <button class="theme-chip" type="button" data-theme="daily" aria-pressed="false">
+          <span class="need-icon daily"><svg aria-hidden="true"><use href="#icon-shop"></use></svg></span>
+          <span><strong>衣食住行</strong><small><b data-theme-count="daily">18</b> 個地點</small></span>
+        </button>
+      </div>
+
+      <div class="active-filters" id="activeFilters" aria-live="polite"></div>
+
+      <div class="view-toggle" role="group" aria-label="地圖及列表顯示方式">
+        <button type="button" class="is-active" data-view="map" aria-pressed="true">
+          <svg aria-hidden="true"><use href="#icon-map"></use></svg>地圖
+        </button>
+        <button type="button" data-view="list" aria-pressed="false">
+          <svg aria-hidden="true"><use href="#icon-list"></use></svg>列表
+        </button>
+      </div>
+
+      <div class="app-body" data-mobile-view="map">
+        <aside class="results-panel" aria-labelledby="resultsTitle">
+          <div class="results-header">
+            <div>
+              <p class="results-count" id="resultsCount" aria-live="polite">載入地點中…</p>
+              <h3 id="resultsTitle">搜尋結果</h3>
+            </div>
+            <button type="button" class="text-button" id="sortNearby" title="以地圖中心作簡單參考排序">
+              由中心向外
+            </button>
+          </div>
+          <div class="results-list" id="resultsList" tabindex="0" aria-label="地點結果列表"></div>
+          <div class="empty-state" id="emptyState" hidden>
+            <span class="empty-illustration" aria-hidden="true"></span>
+            <h3>暫時找不到相符地點</h3>
+            <p>試試清除部分條件，或縮短關鍵字。</p>
+            <button class="primary-button" type="button" id="emptyReset">清除全部條件</button>
+          </div>
+          <div class="list-disclaimer">
+            <svg aria-hidden="true"><use href="#icon-info"></use></svg>
+            「應開放」只按常規時間估算。
+          </div>
+        </aside>
+
+        <div class="map-panel">
+          <div id="map" role="application" aria-label="北區及古洞互動街道地圖；亦可使用左方列表瀏覽地點"></div>
+          <div class="map-loading" id="mapLoading">
+            <span class="loading-mark" aria-hidden="true"></span>
+            <p>街道地圖正在展開</p>
+          </div>
+          <div class="map-error" id="mapError" hidden>
+            <svg aria-hidden="true"><use href="#icon-info"></use></svg>
+            <div>
+              <strong>街道底圖未能載入</strong>
+              <p>你仍可使用地點列表查閱地址及詳情。</p>
+            </div>
+          </div>
+          <div class="map-tools">
+            <button type="button" class="map-tool" id="zoomIn" aria-label="放大地圖">＋</button>
+            <button type="button" class="map-tool" id="zoomOut" aria-label="縮小地圖">−</button>
+            <button type="button" class="map-tool home" id="mapHome" aria-label="返回北區及古洞全景">
+              <svg aria-hidden="true"><use href="#icon-pin"></use></svg>
+            </button>
+          </div>
+          <div class="map-scope" aria-label="目前地圖範圍">
+            <svg aria-hidden="true"><use href="#icon-pin"></use></svg>
+            <span>北區・古洞</span>
+          </div>
+          <div class="map-legend" aria-label="地圖圖例">
+            <span><i class="quick-dot breathe"></i>喘息</span>
+            <span><i class="quick-dot support"></i>支援</span>
+            <span><i class="quick-dot daily"></i>日常</span>
+          </div>
+          <div class="map-preview" id="mapPreview" role="status" aria-live="polite" hidden></div>
+          <div class="map-empty" id="mapEmpty" hidden>
+            <strong>地圖上暫時沒有符合條件的地點</strong>
+            <button type="button" class="text-button" id="mapEmptyReset">清除條件</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="transport-section" id="transport-guide" aria-labelledby="transport-title">
+      <div class="section-heading">
+        <div>
+          <p class="section-kicker">TRAVEL GUIDE</p>
+          <h2 id="transport-title">交通指引</h2>
+        </div>
+        <p>上水公共交通方式一覽。先選交通方式，再直接連結到地圖上的車站、巴士總站及周邊資源。</p>
+      </div>
+
+      <div class="transport-grid">
+        <article class="transport-card rail">
+          <div class="transport-card-top">
+            <span class="transport-icon"><svg aria-hidden="true"><use href="#icon-route"></use></svg></span>
+            <span class="transport-tag">鐵路</span>
+          </div>
+          <h3>港鐵東鐵綫</h3>
+          <p>由上水站往南可到粉嶺、大埔、九龍及港島；北行列車分別前往羅湖或落馬洲，出發前先看清月台顯示。</p>
+          <div class="route-tags"><span>金鐘方向</span><span>羅湖</span><span>落馬洲</span></div>
+          <button class="transport-link" type="button" data-open-map-place="sheung-shui-station">在地圖看上水站 →</button>
+        </article>
+
+        <article class="transport-card bus">
+          <div class="transport-card-top">
+            <span class="transport-icon"><svg aria-hidden="true"><use href="#icon-route"></use></svg></span>
+            <span class="transport-tag">巴士</span>
+          </div>
+          <h3>區內及跨區巴士</h3>
+          <p>主要站位集中在上水總站及上水站新運路、彩園路一帶。前往沙頭角、打鼓嶺、元朗、九龍及港島的路線分散於不同月台。</p>
+          <div class="route-tags"><span>73K</span><span>77K</span><span>78K</span><span>79K</span><span>270A/B/P</span><span>277E/P</span><span>278X</span><span>673</span><span>678</span><span>W3</span></div>
+          <button class="transport-link" type="button" data-open-map-place="sheung-shui-bus-terminus">在地圖看上水巴士總站 →</button>
+        </article>
+
+        <article class="transport-card airport">
+          <div class="transport-card-top">
+            <span class="transport-icon"><svg aria-hidden="true"><use href="#icon-globe"></use></svg></span>
+            <span class="transport-tag">機場／口岸</span>
+          </div>
+          <h3>機場及跨境接駁</h3>
+          <p>上水站及總站周邊有機場巴士及口岸接駁服務。口岸、營辦商、售票方式及上落點會變動，出門前應再核對當日安排。</p>
+          <div class="route-tags"><span>A43</span><span>A43P</span><span>口岸接駁</span></div>
+          <button class="transport-link" type="button" data-open-map-place="sheung-shui-bus-terminus">查看交通總站資料 →</button>
+        </article>
+
+        <article class="transport-card minibus">
+          <div class="transport-card-top">
+            <span class="transport-icon"><svg aria-hidden="true"><use href="#icon-people"></use></svg></span>
+            <span class="transport-tag">綠色小巴</span>
+          </div>
+          <h3>專線小巴</h3>
+          <p>上水站小巴總站連接古洞、坑頭、河上鄉、沙頭角、唐公嶺、蓮麻坑及麒麟村等方向；班次及尾班車時間按路線而定。</p>
+          <div class="route-tags"><span>44／44A</span><span>50A／50K</span><span>51K</span><span>55K</span><span>57K</span><span>58K／58S</span><span>59K</span><span>605</span></div>
+          <button class="transport-link" type="button" data-open-map-place="sheung-shui-bus-terminus">在地圖看小巴接駁點 →</button>
+        </article>
+
+        <article class="transport-card red-minibus">
+          <div class="transport-card-top">
+            <span class="transport-icon"><svg aria-hidden="true"><use href="#icon-map"></use></svg></span>
+            <span class="transport-tag">紅色小巴</span>
+          </div>
+          <h3>紅色公共小巴</h3>
+          <p>新康街、符興街及上水市中心一帶設有紅色小巴站，目的地包括區內及新界其他地點；班次、收費和尾班車由營運者現場安排。</p>
+          <div class="route-tags"><span>上水市中心</span><span>按現場站牌</span></div>
+          <button class="transport-link" type="button" data-open-map-place="sheung-shui-station">查看上水市中心位置 →</button>
+        </article>
+
+        <article class="transport-card taxi">
+          <div class="transport-card-top">
+            <span class="transport-icon"><svg aria-hidden="true"><use href="#icon-pin"></use></svg></span>
+            <span class="transport-tag">的士</span>
+          </div>
+          <h3>市區的士站</h3>
+          <p>上水站及上水廣場一帶設的士上落位置，適合前往公共交通較疏落的村落。繁忙時段宜預留候車時間。</p>
+          <div class="route-tags"><span>上水站</span><span>上水廣場</span><span>新界的士</span></div>
+          <button class="transport-link" type="button" data-open-map-place="sheung-shui-station">在地圖看的士接駁位置 →</button>
+        </article>
+      </div>
+
+      <div class="transport-map-links" aria-label="地圖上的交通資源">
+        <strong>地圖快速連結</strong>
+        <button type="button" data-open-map-place="sheung-shui-station">上水站</button>
+        <button type="button" data-open-map-place="sheung-shui-bus-terminus">上水巴士總站</button>
+        <button type="button" data-open-map-place="fanling-station-bus-terminus">粉嶺站轉車站</button>
+        <button type="button" data-open-map-place="landmark-north">上水廣場</button>
+        <button type="button" data-open-map-place="sheung-shui-centre">上水中心</button>
+      </div>
+      <p class="transport-disclaimer">路線、班次、票價及月台可能隨時調整；本指引用於規劃方向，出發前請以運輸署、港鐵、巴士及小巴營辦商最新公布為準。</p>
+    </section>
+
+    <section class="notes-section" id="volunteer-notes" aria-labelledby="notes-title">
+      <div class="section-heading">
+        <div>
+          <p class="section-kicker">FIELD NOTES</p>
+          <h2 id="notes-title">義工的話</h2>
+        </div>
+        <p>七份義工手寫推薦；橫向原稿保持橫向，直向原稿保留原貌。</p>
+      </div>
+      <div class="notes-grid seven-notes">
+        <article class="note-card">
+          <button class="note-scan" type="button" data-lightbox-src="assets/notes/note-1-trim.jpg" data-lightbox-title="北區公園｜手寫原稿">
+            <img src="assets/notes/note-1-trim.jpg" alt="義工手寫的北區公園推薦原稿。">
+            <span><svg aria-hidden="true"><use href="#icon-expand"></use></svg>原稿</span>
+          </button>
+          <div class="note-copy">
+            <span class="note-label">01 · 喘息空間</span>
+            <h3>北區公園</h3>
+            <blockquote>「免費兒童遊樂設施，裡面還有籃球場、足球場；每年3–5月是賞花熱門景點。遛娃散心兩不誤。」</blockquote>
+            <button type="button" class="text-button" data-open-place="north-district-park">看北區公園詳情 →</button>
+          </div>
+        </article>
+        <article class="note-card">
+          <button class="note-scan" type="button" data-lightbox-src="assets/notes/note-2-trim.jpg" data-lightbox-title="保榮路體育館｜手寫原稿">
+            <img src="assets/notes/note-2-trim.jpg" alt="義工手寫的保榮路體育館推薦原稿。">
+            <span><svg aria-hidden="true"><use href="#icon-expand"></use></svg>原稿</span>
+          </button>
+          <div class="note-copy">
+            <span class="note-label">02 · 日常</span>
+            <h3>保榮路體育館</h3>
+            <blockquote>「綜合性體育館，各種球類需預約；設健身室、室內緩跑、攀岩及兒童遊樂室。」</blockquote>
+            <button type="button" class="text-button" data-open-place="po-wing-road-sports-centre">看場館詳情 →</button>
+          </div>
+        </article>
+        <article class="note-card">
+          <button class="note-scan" type="button" data-lightbox-src="assets/notes/note-3-trim.jpg" data-lightbox-title="上水公共圖書館｜手寫原稿">
+            <img src="assets/notes/note-3-trim.jpg" alt="義工手寫的上水公共圖書館推薦原稿。">
+            <span><svg aria-hidden="true"><use href="#icon-expand"></use></svg>原稿</span>
+          </button>
+          <div class="note-copy">
+            <span class="note-label">03 · 社區支援</span>
+            <h3>上水公共圖書館</h3>
+            <blockquote>「提供成人圖書、兒童圖書及多元藏書，並設電腦資訊站；近港鐵站及大商場。」</blockquote>
+            <button type="button" class="text-button" data-open-place="sheung-shui-public-library">看圖書館詳情 →</button>
+          </div>
+        </article>
+        <article class="note-card">
+          <button class="note-scan" type="button" data-lightbox-src="assets/notes/note-4-trim.jpg" data-lightbox-title="北區運動場｜手寫原稿">
+            <img src="assets/notes/note-4-trim.jpg" alt="義工手寫的北區運動場推薦原稿。">
+            <span><svg aria-hidden="true"><use href="#icon-expand"></use></svg>原稿</span>
+          </button>
+          <div class="note-copy">
+            <span class="note-label">04 · 日常</span>
+            <h3>北區運動場</h3>
+            <blockquote>「標準400米八線跑道、天然足球場；手記記錄晚上有照明，並設更衣室、洗手間、飲水機及小食亭。」</blockquote>
+            <button type="button" class="text-button" data-open-place="north-district-sports-ground">看運動場詳情 →</button>
+          </div>
+        </article>
+        <article class="note-card">
+          <button class="note-scan" type="button" data-lightbox-src="assets/notes/note-5-trim.jpg" data-lightbox-title="上水廣場｜手寫原稿">
+            <img src="assets/notes/note-5-trim.jpg" alt="義工手寫的上水廣場推薦原稿。">
+            <span><svg aria-hidden="true"><use href="#icon-expand"></use></svg>原稿</span>
+          </button>
+          <div class="note-copy">
+            <span class="note-label">05 · 衣食住行</span>
+            <h3>上水廣場</h3>
+            <blockquote>「從上水站A4出口可直達；商場內有美妝、美食、服裝及珠寶等選擇。」</blockquote>
+            <button type="button" class="text-button" data-open-place="landmark-north">看上水廣場詳情 →</button>
+          </div>
+        </article>
+        <article class="note-card">
+          <button class="note-scan" type="button" data-lightbox-src="assets/notes/note-6-trim.jpg" data-lightbox-title="石湖墟街市｜手寫原稿">
+            <img src="assets/notes/note-6-trim.jpg" alt="義工手寫的石湖墟街市推薦原稿。">
+            <span><svg aria-hidden="true"><use href="#icon-expand"></use></svg>原稿</span>
+          </button>
+          <div class="note-copy">
+            <span class="note-label">06 · 衣食住行</span>
+            <h3>石湖墟街市</h3>
+            <blockquote>「有菜、海鮮、肉、熟食、生果、日用品、鮮花及勞保用品；樓上可到圖書館。」</blockquote>
+            <button type="button" class="text-button" data-open-place="shek-wu-hui-market">看街市詳情 →</button>
+          </div>
+        </article>
+        <article class="note-card">
+          <button class="note-scan" type="button" data-lightbox-src="assets/notes/note-7-trim.jpg" data-lightbox-title="上水交通｜手寫原稿">
+            <img src="assets/notes/note-7-trim.jpg" alt="義工手寫的上水交通推薦原稿。">
+            <span><svg aria-hidden="true"><use href="#icon-expand"></use></svg>原稿</span>
+          </button>
+          <div class="note-copy">
+            <span class="note-label">07 · 衣食住行</span>
+            <h3>上水交通</h3>
+            <blockquote>「上水站連接東鐵綫、巴士總站及的士站；手記記錄的士站位於A3出口。」</blockquote>
+            <button type="button" class="text-button" data-open-place="sheung-shui-station">看上水站詳情 →</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact-section" id="important-contacts" aria-labelledby="contact-title">
+      <div class="section-heading compact">
+        <div>
+          <p class="section-kicker">重要聯絡</p>
+          <h2 id="contact-title">有需要，打一個電話</h2>
+        </div>
+      </div>
+      <div class="contact-infographic" aria-label="重要聯絡電話">
+        <a class="contact-cell emergency" href="tel:999">
+          <span class="contact-icon"><svg aria-hidden="true"><use href="#icon-emergency"></use></svg></span>
+          <span><strong>緊急事故</strong><b>999</b><small>警察 · 消防 · 救護</small></span>
+        </a>
+        <a class="contact-cell" href="tel:18111">
+          <span class="contact-icon"><svg aria-hidden="true"><use href="#icon-heart"></use></svg></span>
+          <span><strong>情緒通</strong><b>18111</b><small>精神健康支援</small></span>
+        </a>
+        <a class="contact-cell" href="tel:182183">
+          <span class="contact-icon"><svg aria-hidden="true"><use href="#icon-people"></use></svg></span>
+          <span><strong>照顧者支援</strong><b>182 183</b><small>指定熱線</small></span>
+        </a>
+        <a class="contact-cell" href="tel:23432255">
+          <span class="contact-icon"><svg aria-hidden="true"><use href="#icon-lifebuoy"></use></svg></span>
+          <span><strong>社署熱線</strong><b>2343 2255</b><small>社會福利查詢</small></span>
+        </a>
+        <a class="contact-cell" href="tel:26838888">
+          <span class="contact-icon"><svg aria-hidden="true"><use href="#icon-hospital"></use></svg></span>
+          <span><strong>北區醫院</strong><b>2683 8888</b><small>急症室全日服務</small></span>
+        </a>
+        <a class="contact-cell" href="tel:23536119">
+          <span class="contact-icon"><svg aria-hidden="true"><use href="#icon-globe"></use></svg></span>
+          <span><strong>跨境及國際社會服務</strong><b>2353 6119</b><small>ISS 香港國際社會服務社</small></span>
+        </a>
+      </div>
+    </section>
+
+    <section class="about-section" id="about-map" aria-labelledby="about-title">
+      <div class="about-title-block">
+        <p class="section-kicker">社區導航大使</p>
+        <h2 id="about-title">一份義工共創的<br>社區地圖</h2>
+        <p>由組員共同選點、核對資料、走訪社區及撰寫推薦，整理成這份北區・古洞資源地圖。</p>
+      </div>
+      <div class="journey-infographic">
+        <article>
+          <span class="journey-number">4</span>
+          <div><h3>節小組</h3><p>分類、資料、路線、校對</p></div>
+        </article>
+        <span class="journey-plus" aria-hidden="true">＋</span>
+        <article>
+          <span class="journey-number">2</span>
+          <div><h3>次實地探索</h3><p>走訪上水、粉嶺及北區社區空間</p></div>
+        </article>
+        <span class="journey-plus" aria-hidden="true">→</span>
+        <article>
+          <span class="journey-number">45</span>
+          <div><h3>個社區點</h3><p>地圖、資料、街坊推薦</p></div>
+        </article>
+      </div>
+      <p class="journey-summary">活動經歷 4 節小組及 2 次實地社區探索完成。<span>資料日期：2026.10.29</span></p>
+    </section>
+
+    <section class="field-trip-section" aria-labelledby="field-trip-title">
+      <div class="section-heading">
+        <div>
+          <p class="section-kicker">義工推薦</p>
+          <h2 id="field-trip-title">義工推薦好去處</h2>
+        </div>
+        <p>點擊相片放大。</p>
+      </div>
+      <div class="photo-strip gallery-strip">
+        <button class="photo-card" type="button" data-lightbox-src="assets/images/north-district-park-3.jpg" data-lightbox-title="北區公園・上水">
+          <img src="assets/images/north-district-park-3.jpg" alt="北區公園園景。"><span><strong>北區公園</strong><small>上水</small><i><svg aria-hidden="true"><use href="#icon-expand"></use></svg></i></span>
+        </button>
+        <button class="photo-card" type="button" data-lightbox-src="assets/images/north-district-sports-ground-1.jpg" data-lightbox-title="北區運動場・上水">
+          <img src="assets/images/north-district-sports-ground-1.jpg" alt="北區運動場設施。"><span><strong>北區運動場</strong><small>上水</small><i><svg aria-hidden="true"><use href="#icon-expand"></use></svg></i></span>
+        </button>
+        <button class="photo-card" type="button" data-lightbox-src="assets/images/sheung-shui-centre.jpg" data-lightbox-title="上水中心・上水">
+          <img src="assets/images/sheung-shui-centre.jpg" alt="上水中心入口。"><span><strong>上水中心</strong><small>上水</small><i><svg aria-hidden="true"><use href="#icon-expand"></use></svg></i></span>
+        </button>
+        <button class="photo-card" type="button" data-lightbox-src="assets/images/field-note-cuhk.jpg" data-lightbox-title="香港中文大學・延伸探索">
+          <img src="assets/images/field-note-cuhk.jpg" alt="香港中文大學校園景象。"><span><strong>香港中文大學</strong><small>延伸探索</small><i><svg aria-hidden="true"><use href="#icon-expand"></use></svg></i></span>
+        </button>
+        <button class="photo-card" type="button" data-lightbox-src="assets/images/field-note-shatin.jpg" data-lightbox-title="沙田新城市廣場・延伸探索">
+          <img src="assets/images/field-note-shatin.jpg" alt="沙田新城市廣場一帶。"><span><strong>沙田新城市廣場</strong><small>延伸探索</small><i><svg aria-hidden="true"><use href="#icon-expand"></use></svg></i></span>
+        </button>
+        <button class="photo-card" type="button" data-lightbox-src="assets/images/field-note-cha-kwo-ling.jpg" data-lightbox-title="茶果嶺海濱公園・延伸探索">
+          <img src="assets/images/field-note-cha-kwo-ling.jpg" alt="茶果嶺海濱公園。"><span><strong>茶果嶺海濱公園</strong><small>延伸探索</small><i><svg aria-hidden="true"><use href="#icon-expand"></use></svg></i></span>
+        </button>
+        <button class="photo-card" type="button" data-lightbox-src="assets/images/field-note-lung-mei.jpg" data-lightbox-title="龍尾灘・延伸探索">
+          <img src="assets/images/field-note-lung-mei.jpg" alt="龍尾灘海岸。"><span><strong>龍尾灘</strong><small>延伸探索</small><i><svg aria-hidden="true"><use href="#icon-expand"></use></svg></i></span>
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-main">
+      <div class="footer-brand">
+        <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
+        <div><strong>北區，一齊行</strong><p>社區導航大使小組共創</p></div>
+      </div>
+      <div class="iss-developer">
+        <span>網站開發</span>
+        <div class="iss-logo-plate">
+          <img src="assets/images/isshk-logo.png" alt="香港國際社會服務社 International Social Service Hong Kong Branch">
+        </div>
+      </div>
+      <div class="iss-contact">
+        <strong>跨境及國際社會服務</strong>
+        <p class="iss-unit">香港國際社會服務社</p>
+        <p>新界上水龍運街 2 號<br>北區社區中心 2 樓</p>
+        <a href="tel:23536119">2353 6119</a>
+      </div>
+    </div>
+    <p class="footer-note">本項目經歷 4 節小組及 2 次實地社區探索完成 · 資料日期 2026.10.29</p>
+  </footer>
+
+  <div class="detail-backdrop" id="detailBackdrop" hidden></div>
+  <aside class="detail-panel" id="detailPanel" role="dialog" aria-modal="true" aria-labelledby="detailTitle" aria-hidden="true">
+    <div class="detail-grabber" aria-hidden="true"></div>
+    <button class="icon-button detail-close" type="button" id="closeDetail" aria-label="關閉地點詳情">
+      <svg aria-hidden="true"><use href="#icon-close"></use></svg>
+    </button>
+    <div id="detailContent"></div>
+  </aside>
+
+  <div class="image-lightbox" id="imageLightbox" role="dialog" aria-modal="true" aria-labelledby="lightboxTitle" hidden>
+    <button class="lightbox-close" type="button" id="closeLightbox" aria-label="關閉大圖">
+      <svg aria-hidden="true"><use href="#icon-close"></use></svg>
+    </button>
+    <button class="lightbox-nav prev" type="button" id="prevImage" aria-label="上一張">
+      <svg aria-hidden="true"><use href="#icon-arrow-left"></use></svg>
+    </button>
+    <figure>
+      <img id="lightboxImage" src="" alt="">
+      <figcaption id="lightboxTitle"></figcaption>
+    </figure>
+    <button class="lightbox-nav next" type="button" id="nextImage" aria-label="下一張">
+      <svg aria-hidden="true"><use href="#icon-arrow-right"></use></svg>
+    </button>
+  </div>
+
+  <dialog class="filter-dialog" id="filterDialog" aria-labelledby="filterTitle">
+    <form method="dialog" id="filterForm">
+      <header class="dialog-header">
+        <div>
+          <p class="section-kicker">REFINE THE MAP</p>
+          <h2 id="filterTitle">收窄搜尋範圍</h2>
+        </div>
+        <button class="icon-button" type="button" data-close-filter aria-label="關閉篩選">
+          <svg aria-hidden="true"><use href="#icon-close"></use></svg>
+        </button>
+      </header>
+      <div class="dialog-body">
+        <fieldset>
+          <legend>地區</legend>
+          <div class="choice-row">
+            <label class="radio-choice"><input type="radio" name="district" value="all" checked><span>全部</span></label>
+            <label class="radio-choice"><input type="radio" name="district" value="上水"><span>上水</span></label>
+            <label class="radio-choice"><input type="radio" name="district" value="粉嶺"><span>粉嶺</span></label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>費用</legend>
+          <div class="choice-row wrap">
+            <label class="radio-choice"><input type="radio" name="fee" value="all" checked><span>全部</span></label>
+            <label class="radio-choice"><input type="radio" name="fee" value="free"><span>免費</span></label>
+            <label class="radio-choice"><input type="radio" name="fee" value="low"><span>低收費</span></label>
+            <label class="radio-choice"><input type="radio" name="fee" value="paid"><span>按項收費</span></label>
+          </div>
+        </fieldset>
+        <fieldset class="subcategory-fieldset">
+          <legend>詳細分類 <small>可多選</small></legend>
+          <div id="subcategoryChoices"></div>
+        </fieldset>
+        <fieldset>
+          <legend>服務對象 <small>可多選</small></legend>
+          <div class="check-grid audience-grid">
+            <label class="check-choice"><input type="checkbox" name="audience" value="新來港人士"><span>新來港人士</span></label>
+            <label class="check-choice"><input type="checkbox" name="audience" value="家庭"><span>家庭</span></label>
+            <label class="check-choice"><input type="checkbox" name="audience" value="兒童"><span>兒童</span></label>
+            <label class="check-choice"><input type="checkbox" name="audience" value="青少年"><span>青少年</span></label>
+            <label class="check-choice"><input type="checkbox" name="audience" value="長者"><span>長者</span></label>
+            <label class="check-choice"><input type="checkbox" name="audience" value="照顧者"><span>照顧者</span></label>
+            <label class="check-choice"><input type="checkbox" name="audience" value="婦女"><span>婦女</span></label>
+            <label class="check-choice"><input type="checkbox" name="audience" value="殘疾人士"><span>殘疾人士</span></label>
+          </div>
+        </fieldset>
+        <label class="switch-row">
+          <span>
+            <strong>按公開時間，現在應該開放</strong>
+            <small>只計算有結構化時間的地點，不保證即時營業。</small>
+          </span>
+          <input type="checkbox" name="openNow" id="openNow">
+          <i aria-hidden="true"></i>
+        </label>
+      </div>
+      <footer class="dialog-footer">
+        <button type="button" class="text-button" id="clearFilters">清除全部</button>
+        <button type="submit" class="primary-button" id="applyFilters">套用篩選</button>
+      </footer>
+    </form>
+  </dialog>
+
+  <script src="assets/vendor/leaflet.js"></script>
+  <script src="assets/vendor/leaflet.markercluster.js"></script>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
